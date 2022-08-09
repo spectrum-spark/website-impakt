@@ -1,0 +1,79 @@
+---
+title: "Key Collaborators"
+---
+
+<style>
+.flex-grid-thirds {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.flex-grid-thirds .col {
+    width: 33%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.flex-grid-thirds .col img {
+    width: 95%;
+}
+
+@media (max-width: 160px) {
+    .flex-grid-thirds {
+        display: block;
+        .col {
+            max-width: 100%;
+            margin = 0 0 10px 0;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+.col {
+    padding: 10px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+generate_image_link <- function(image_path, url) {
+    cat(
+        glue::glue(
+            "::: col
+            <a href='{url}'><img src='{image_path}' /> </a>
+            :::\n\n"
+        )
+    )
+}
+
+
+```
+
+# Domestic Collaborators
+
+```{r key-collaborators, results='asis'}
+cat(":::: flex-grid-thirds\n")
+generate_image_link(
+    image_path = "images/collaborators/mcri_logo.png",
+    url = "https://www.mcri.edu.au/"
+)
+generate_image_link(
+    image_path = "images/collaborators/kirby_institute_logo.png",
+    url = "https://kirby.unsw.edu.au/"
+)
+generate_image_link(
+    image_path = "images/collaborators/menzies_logo.png",
+    url = "https://www.menzies.edu.au/"
+)
+cat("
+::::
+")
+```

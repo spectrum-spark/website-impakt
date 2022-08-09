@@ -1,0 +1,38 @@
+---
+title: "Staff name"
+---
+    
+```{r setup, echo=F}
+staff_member <- staff_list[[2]]
+```
+    
+# About
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```
+```{r generate-external-link, results='asis', echo=FALSE}
+if (!is.na(staff_member$external_link)) {
+    glue::glue(
+        "<a href='{staff_member$external_link}'>",
+        "<div class='more--button'> More </div>",
+        "</a>"
+    )
+}
+```

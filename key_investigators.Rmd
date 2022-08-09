@@ -1,0 +1,51 @@
+---
+title: "Investigators"
+---
+
+<style>
+.flex-grid-thirds {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.flex-grid-thirds .col {
+    width: 33%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 400px) {
+    .flex-grid-thirds {
+        display: block;
+        .col {
+            width: 100%;
+            margin = 0 0 10px 0;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+.col {
+    padding: 10px;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+
+```{r, results='asis', layout = "l-body-outset"}
+cat(":::: flex-grid-thirds \n")
+for (staff_member in staff_list) {
+    condensr::generate_markdown_for_member(staff_member)
+}
+# generate_markdown_for_staff(staff_list_processed[[1]])
+# cat("### Prof. Jodie McVernon")
+cat("::::")
+```
