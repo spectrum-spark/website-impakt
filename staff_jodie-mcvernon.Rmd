@@ -11,10 +11,6 @@ links:
 output:
     postcards::trestles
 ---
-<style>
-
-</style>
-
    
 # About
 Professor Jodie McVernon is a physician with subspecialty qualifications in 
