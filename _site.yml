@@ -2,7 +2,7 @@ name: "."
 title: "SPECTRUM"
 description: |
   SPECTRUM
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
