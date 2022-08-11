@@ -7,12 +7,11 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Our Staff"
-      href: key_investigators.html
+      href: staff.html
     - text: "Our Partners"
       href: key_collaborators.html
 output:
   distill::distill_article:
     theme: theme.css
+exclude: ["*.csv"]

@@ -1,5 +1,5 @@
 ---
-title: "SPECTRUM"
+title: "SPECTRUM-SPARK Modelling Consortium"
 description: |
 site: distill::distill_website
 ---
@@ -13,13 +13,16 @@ staff_csv <- read.csv("staff_list.csv", na.strings = c("NA", "")) %>%
     filter(!is.na(id))
 
 staff_list <- lapply(1:nrow(staff_csv), function(i) {
-    staff_member(
+    member <- staff_member(
         id = staff_csv[i, "id"],
         name = staff_csv[i, "name"],
         description = staff_csv[i, "description"],
         external_link = staff_csv[i, "external_link"],
         internal_link = staff_csv[i, "internal_link"]
     )
+    member[["staff_type"]] <- staff_csv[i, "staff_type"]
+
+    return(member)
 })
 names(staff_list) <- staff_csv[, "id"]
 

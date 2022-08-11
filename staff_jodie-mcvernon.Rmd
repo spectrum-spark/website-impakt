@@ -1,8 +1,6 @@
 ---
 title: "Jodie McVernon"
 image: "images/staff/jodie-mcvernon.png"
-params:
-    staff_member: !r staff_list[['jodie-mcvernon']]
 links:
     - label: Doherty
       url: "`r staff_list[['jodie-mcvernon']]$external_link`"
@@ -31,6 +29,7 @@ Melbourne Hospital, and a National Health and Medical Research Council
 # Related Projects
 
 ```{r list-projects, results = 'asis', echo = FALSE}
+staff_member <- staff_list[["jodie-mcvernon"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

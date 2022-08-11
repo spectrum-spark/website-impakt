@@ -1,16 +1,18 @@
-﻿id,name,description,external_link,internal_link
+﻿id,name,description,external_link,internal_link,staff_type
 jodie-mcvernon,Prof. Jodie McVernon,"Professor and Director of Doherty Epidemiology
 
-The Doherty Institute",https://www.doherty.edu.au/people/professor-jodie-mcvernon,TRUE
+The Doherty Institute",https://www.doherty.edu.au/people/professor-jodie-mcvernon,TRUE,ci
 james-mccaw,Prof. James McCaw,"Mathematical biologist and infectious diseases epidemiologist
 
 Department of Mathematics and Statistics and Melbourne School of Population and Global Health
 
-The University of Melbourne",https://findanexpert.unimelb.edu.au/profile/4554-james-mccaw,TRUE
+The University of Melbourne",https://findanexpert.unimelb.edu.au/profile/4554-james-mccaw,TRUE,ci
 natalie-carvahlo,Dr Natalie Carvhalo,"Senior Research Fellow at the Melbourne School of Population and Global Health
 
-The University of Melbourne",,FALSE
+The University of Melbourne",,FALSE,ci
 iadine-chades,Dr Iadine Chades,"Team leader, Principal Research Scientist
 
-CSIRO",,FALSE
-,,,,
+CSIRO",,FALSE,ci
+michael-lydeamore,Dr. Michael Lydeamore,"Lecturer, Business Analytics
+
+Department of Econometrics and Business Statistics, Monash University",https://research.monash.edu/en/persons/michael-lydeamore,TRUE,affiliate

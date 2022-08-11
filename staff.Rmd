@@ -1,5 +1,8 @@
 ---
-title: "Investigators"
+title: "Staff, Students and Affiliates"
+output:
+    distill::distill_article:
+        toc: true
 ---
 
 <style>
@@ -31,21 +34,38 @@ title: "Investigators"
 .col {
     padding: 10px;
 }
+
+h2 {
+    text-align: center;
+}
 </style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-
-
+## Chief Investigators
 ```{r, results='asis', layout = "l-body-outset"}
 cat(":::: flex-grid-thirds \n")
 for (staff_member in staff_list) {
-    condensr::generate_markdown_for_member(staff_member)
+    if (staff_member$staff_type == "ci") {
+          condensr::generate_markdown_for_member(staff_member)
+      }
 }
-# generate_markdown_for_staff(staff_list_processed[[1]])
-# cat("### Prof. Jodie McVernon")
+cat("::::")
+```
+
+## Post-doctoral Researchers
+
+## Students
+
+## Affiliated Researchers
+```{r, results='asis', layout = "l-body-outset"}
+cat(":::: flex-grid-thirds \n")
+for (staff_member in staff_list) {
+    if (staff_member$staff_type == "affiliate") {
+          condensr::generate_markdown_for_member(staff_member)
+      }
+}
 cat("::::")
 ```
