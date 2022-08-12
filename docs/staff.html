@@ -2233,6 +2233,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 5px 5px 5px 5px;
     display: flex;
     justify-content: center;
+    align-self: flex-end;
   }
 
   h1 {
@@ -2480,7 +2481,8 @@ Researchers</a></li>
 .flex-grid-thirds .col {
     width: 33%;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
+    margin-right: 2px
 }
 
 @media (max-width: 400px) {
@@ -2498,6 +2500,15 @@ Researchers</a></li>
 }
 .col {
     padding: 10px;
+    border-style: solid;
+    border-spacing: 20px;
+    border-color: #cbd1cc;
+    border-width: thin;
+    transition: background-color .5s;
+}
+
+.col:hover {
+    background-color: #dcdcdc;
 }
 
 h2 {
@@ -2507,27 +2518,23 @@ h2 {
 <h2 id="chief-investigators">Chief Investigators</h2>
 <div class="layout-chunk" data-layout="l-body-outset">
 <div class="flex-grid-thirds">
-<section id="prof.-jodie-mcvernon" class="col">
+<section id="prof.-jodie-mcvernon" class="col"
+onclick="location.href=&#39;staff_jodie-mcvernon.html&#39;;"
+style="cursor: pointer;">
 <h3>Prof. Jodie McVernon</h3>
 <p><img src="images/staff/jodie-mcvernon.png" /></p>
 <p>Professor and Director of Doherty Epidemiology</p>
-The Doherty Institute <a href='staff_jodie-mcvernon.html'>
-<div class="more--button">
-More
-</div>
-<p></a></p>
+<p>The Doherty Institute</p>
 </section>
-<section id="prof.-james-mccaw" class="col">
+<section id="prof.-james-mccaw" class="col"
+onclick="location.href=&#39;staff_james-mccaw.html&#39;;"
+style="cursor: pointer;">
 <h3>Prof. James McCaw</h3>
 <p><img src="images/staff/james-mccaw.png" /></p>
 <p>Mathematical biologist and infectious diseases epidemiologist</p>
 <p>Department of Mathematics and Statistics and Melbourne School of
 Population and Global Health</p>
-The University of Melbourne <a href='staff_james-mccaw.html'>
-<div class="more--button">
-More
-</div>
-<p></a></p>
+<p>The University of Melbourne</p>
 </section>
 <section id="dr-natalie-carvhalo" class="col">
 <h3>Dr Natalie Carvhalo</h3>
@@ -2549,16 +2556,14 @@ Global Health</p>
 <h2 id="affiliated-researchers">Affiliated Researchers</h2>
 <div class="layout-chunk" data-layout="l-body-outset">
 <div class="flex-grid-thirds">
-<section id="dr.-michael-lydeamore" class="col">
+<section id="dr.-michael-lydeamore" class="col"
+onclick="location.href=&#39;staff_michael-lydeamore.html&#39;;"
+style="cursor: pointer;">
 <h3>Dr. Michael Lydeamore</h3>
 <p><img src="images/staff/michael-lydeamore.png" /></p>
 <p>Lecturer, Business Analytics</p>
-Department of Econometrics and Business Statistics, Monash University
-<a href='staff_michael-lydeamore.html'>
-<div class="more--button">
-More
-</div>
-<p></a></p>
+<p>Department of Econometrics and Business Statistics, Monash
+University</p>
 </section>
 </div>
 </div>

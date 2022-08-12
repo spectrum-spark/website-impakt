@@ -15,7 +15,8 @@ output:
 .flex-grid-thirds .col {
     width: 33%;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
+    margin-right: 2px
 }
 
 @media (max-width: 400px) {
@@ -33,6 +34,15 @@ output:
 }
 .col {
     padding: 10px;
+    border-style: solid;
+    border-spacing: 20px;
+    border-color: #cbd1cc;
+    border-width: thin;
+    transition: background-color .5s;
+}
+
+.col:hover {
+    background-color: #dcdcdc;
 }
 
 h2 {
@@ -64,8 +74,8 @@ cat("::::")
 cat(":::: flex-grid-thirds \n")
 for (staff_member in staff_list) {
     if (staff_member$staff_type == "affiliate") {
-          condensr::generate_markdown_for_member(staff_member)
-      }
+        condensr::generate_markdown_for_member(staff_member)
+    }
 }
 cat("::::")
 ```

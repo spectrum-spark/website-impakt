@@ -90,6 +90,7 @@ d-appendix {
   padding: 5px 5px 5px 5px;
   display: flex;
   justify-content: center;
+  align-self: flex-end;
 }
 
 h1 {
