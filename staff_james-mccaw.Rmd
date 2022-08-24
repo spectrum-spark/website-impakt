@@ -1,5 +1,13 @@
 ---
-title: "Staff name"
+title: "James McCaw"
+image: "images/staff/james-mccaw.png"
+links:
+    - label: Doherty
+      url: "`r staff_list[['james-mccaw']]$external_link`"
+    - label: Email
+      url: "mailto:jamesm@unimelb.edu.au"
+output:
+    postcards::trestles
 ---
     
 ```{r setup, echo=F}
@@ -7,6 +15,9 @@ staff_member <- staff_list[[2]]
 ```
     
 # About
+James McCaw is Professor of Mathematical Biology and an infectious diseases epidemiologist at the University of Melbourne, Australia, where he holds a split appointment between the School of Mathematics and Statistics and the Melbourne School of Population and Global Health. He holds a PhD in theoretical physics and was awarded an Australian Research Council Future Fellowship (2011-15). His interests span from modelling the within-host dynamics of infection to public health control strategies, with a particular emphasis on influenza and malaria.
+
+Within PRISM², James co-leads the respiratory viruses theme, with projects focusing on the host-immune response to influenza and developing real-time outbreak detection and forecasting tools. He has further interests in the emergence of drug-resistance under the emerging diseases theme, with projects on artemisinin resistance for malaria and ivermectin resistance for onchocerciasis.
 
 # Related Projects
 
@@ -25,14 +36,5 @@ for (publication in publication_list) {
     if (staff_member$id %in% publication$related_staff) {
         generate_markdown_for_publications(publication)
     }
-}
-```
-```{r generate-external-link, results='asis', echo=FALSE}
-if (!is.na(staff_member$external_link)) {
-    glue::glue(
-        "<a href='{staff_member$external_link}'>",
-        "<div class='more--button'> More </div>",
-        "</a>"
-    )
 }
 ```
