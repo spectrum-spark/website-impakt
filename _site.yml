@@ -1,7 +1,7 @@
-name: "."
-title: "SPECTRUM"
+name: "SPECTRUM-SPARK Modellign Consortium"
+title: "SPECTRUM-SPARK Modelling Consortium"
 description: |
-  SPECTRUM
+  SPECTRUM-SPARK Modelling Consortium
 output_dir: "docs"
 navbar:
   right:
