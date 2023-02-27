@@ -1,0 +1,40 @@
+---
+title: "SPECTRUM & SPARK One Health Seed Funding Grants"
+description: |
+  Applications Open: SPECTRUM & SPARK One Health Seed Funding Grants
+author:
+  - name: Laura Bannerman
+    url: {}
+categories:
+  - Funding Opportunities
+date: 2022-09-09
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+SPECTRUM & SPARK have announced the next round of our joint seed funding grant scheme for early- and middle-career researchers in our network, with a key focus on One Health projects. Applications will be accepted on a rolling basis.
+
+In this round of funding, AUD$20,000 per grant will be available, with funds to be spent by June 30th 2023.   
+
+The seed funding is to promote collaborative One Health projects with a team of researchers (minimum of 2) from different SPECTRUM & SPARK themes. Please refer to the [funding guidelines](one_health_seed_funding_guidelines.pdf) for more details on who is eligible for this funding.
+
+The research must be impactful, with the collaborative team providing a meaningful contribution to SPECTRUM & SPARK. The research must fall within the scope of SPECTRUM & SPARK, as outlined in the Seed Funding Guidelines. We also prioritise applications that can demonstrate *sustainability, inclusivity and diversity*.
+
+### Criteria
+
+* Impactful and quality research aligned with the focus areas of SPECTRUM and/or SPARK that addresses a One Health issue in our region.
+* The ability to demonstrate genuine collaboration between themes.
+* Demonstration of how the grant will contribute to securing future Category 1 or international equivalent funding Application Process
+
+### Application Process
+
+Applicants should take careful note of the key dates on page one of these guidelines and ensure they prepare applications in plenty of time. This is a competitive funding scheme. Funds are limited, so we encourage any interested applicants to apply as soon as possible.
+
+Applications can be submitted to the SPECTRUM & SPARK One Health committee via this link: https://forms.gle/m5qpvUeZMtEa1kNS7
+
+Applications that are successful in the first round of assessment will be invited to an interview to discuss their proposal further.

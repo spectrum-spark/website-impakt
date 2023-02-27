@@ -11,6 +11,8 @@
 /* This must remain at the top of this file.                 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@100&display=swap');
+
 html {
   /*-- Main font sizes --*/
   --title-size: 50px;
@@ -27,7 +29,8 @@ html {
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   --heading-font: sans-serif;
   --mono-font: monospace;
-  --body-font: "Roboto", sans-serif;
+  --body-font: "Quicksand";
+  --heading-font: "Raleway";
   --navbar-font: sans-serif;
   /* websites + blogs only */
 }
@@ -61,8 +64,8 @@ d-appendix {
   --title-size: 18px;
   --text-color: rgba(0, 0, 0, 0.8);
   --text-size: 15px;
-  --hover-color: #F05662;
-  --bkgd-color: #c1c1c1;
+  --hover-color: #9E1F63;
+  --bkgd-color: #F05662;
 }
 
 .distill-site-footer {
@@ -109,4 +112,8 @@ h1 {
 
 .mx-auto {
   margin-right: 0 !important;
+}
+
+.description {
+  width: 60% !important;
 }

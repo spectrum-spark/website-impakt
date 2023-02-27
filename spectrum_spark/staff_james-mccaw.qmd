@@ -1,0 +1,51 @@
+---
+title: "James McCaw"
+image: "images/staff/james-mccaw.png"
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+        - text: Email
+          href: "mailto:jamesm@unimelb.edu.au"
+---
+    
+
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+
+::: {#about-block}    
+
+James McCaw is Professor of Mathematical Biology and an infectious diseases epidemiologist at the University of Melbourne, Australia, where he holds a split appointment between the School of Mathematics and Statistics and the Melbourne School of Population and Global Health. He holds a PhD in theoretical physics and was awarded an Australian Research Council Future Fellowship (2011-15). His interests span from modelling the within-host dynamics of infection to public health control strategies, with a particular emphasis on influenza and malaria.
+
+Within PRISM², James co-leads the respiratory viruses theme, with projects focusing on the host-immune response to influenza and developing real-time outbreak detection and forecasting tools. He has further interests in the emergence of drug-resistance under the emerging diseases theme, with projects on artemisinin resistance for malaria and ivermectin resistance for onchocerciasis.
+
+:::
+
+# Related Projects
+
+```{r list-projects}
+#| results: 'asis'
+#| echo: false
+
+staff_member <- staff_list[["james-mccaw"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

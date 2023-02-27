@@ -1,0 +1,28 @@
+---
+title: "Job Opportunity at Institut Pasteur Paris"
+description: |
+  Job Opportunity at Institut Pasteur Paris: Postdocs and Engineers in Mathematical Modelling of Infectious Diseases
+author:
+  - name: Laura Bannerman
+categories:
+  - Job Listings
+date: 2022-09-09
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Institut Pasteur Paris are currently recruiting postdocs and engineers to contribute to research projects in their Mathematical Modelling of Infectious Diseases Unit.
+ 
+The candidates will be expected to work with and develop state-of-the-art statistical and mathematical methodology to improve understanding of epidemic dynamics and control. The exact projects the successful applicants will undertake will be determined in discussion with the team, considering the applicants' interests and experience as well as ongoing collaborations of the team.
+ 
+IPP is looking for postdocs but also engineers with a strong expertise in programming.
+ 
+Interested candidates should contact email Cécile Limouzin (cecile.limouzin@pasteur.fr) with a CV, statement of interest and contact details of two referees that will be contacted directly after the interviews. The final deadline for applications is **7th October 2022**, with contracts starting as soon as possible. 
+
+The role is based in Paris, France.

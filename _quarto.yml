@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "SPECTRUM-SPARK Modelling Consortium"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "Consortia"
+        menu:
+          - text: "SPECTRUM/SPARK"
+            href: spectrum_spark/index.html
+    background: "#F05662"
+
+  sidebar:
+    - title: "SPECTRUM/SPARK"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Home"
+          href: spectrum_spark/index.html
+        - text: "Staff"
+          href: spectrum_spark/staff.html
+        - text: "Our Partners"
+          href: spectrum_spark/key_collaborators.html
+        
+
+format:
+  html:
+    theme: cosmo
+    css: theme.css
+    toc: true

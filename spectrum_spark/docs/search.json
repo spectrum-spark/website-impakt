@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "news_feed.html",
+    "href": "news_feed.html",
+    "title": "SPECTRUM-SPARK Consortium News",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "staff_michael-lydeamore.html",
+    "href": "staff_michael-lydeamore.html",
+    "title": "Michael Lydeamore",
+    "section": "",
+    "text": "About\nDr Lydeamore is an infectious disease modeller. His current research focuses on the dynamics of COVID-19, and quantifying the spread an designing control strategies for the spread of antimicrobial resistance in Victorian hospitals, at Monash University and The Alfred Central Clinical School. He acquired a PhD from The University of Melbourne in 2019 focusing on modelling the spread and control of skin infections. He has previously modelled antiviral allocation schemes in an influenza pandemic.\n\n\nRelated Projects\n\n\nRelated publications\n\nTellioglu N, Chisholm RH, McVernon J, Geard N, Campbell PT (2022) The efficacy of sampling strategies for estimating scabies prevalence. PLOS Neglected Tropical Diseases 16(6): e0010456. https://doi.org/10.1371/journal.pntd.0010456"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SPECTRUM-SPARK Modelling Consortium",
+    "section": "",
+    "text": "SPECTRUM’s vision is to reduce morbidity and mortality associated with infectious diseases in Australia and our region.\nThere is a disproportionate burden of infectious diseases in impoverished areas, which persist because of weak health systems and infrastructure. SPECTRUM aims to reduce this burden using sustainable, participatory and model-driven approaches.\nSPECTRUM CRE will:\n\nProduce needed evidence for infectious disease control using models and other quantitative tools.\nUndertake regional risk assessments for emerging diseases like Ebola and COVID-19.\nFrame a proportionate response in the Australian Health Management Pan for Pandemic Influence, including early impact assessment and strategic use of health system resources.\nPromote optimal scheduling of pertussis vaccines on the National Immunisation Program.\nPlan an effective response to the drug-resistant tuberculosis crisis in Daru, Papua New Guinea.\nIdentify latent tuberculosis treatment as the most effective measure of tuberculosis control, including in low-income, high incidence countries, leading to international (WHO) policy change."
+  },
+  {
+    "objectID": "index.html#how-we-work",
+    "href": "index.html#how-we-work",
+    "title": "SPECTRUM-SPARK Modelling Consortium",
+    "section": "HOW WE WORK",
+    "text": "HOW WE WORK\nSPECTRUM CRE focuses on four key themes in infectious disease prevention and control:\n\nEndemic infections (scabies)\nEmerging infectious diseases (COVID-19, pandemic influenza)\nConstraining the emergence of and selection for Antimicrobial Resistance (AMR - multidrug resistant tuberculosis)\nReducing the risk and burden of vector-borne diseases (malaria)\n\nThis will be achieved using The Structured Decision-Making Framework:"
+  },
+  {
+    "objectID": "staff_james-mccaw.html",
+    "href": "staff_james-mccaw.html",
+    "title": "James McCaw",
+    "section": "",
+    "text": "About\nJames McCaw is Professor of Mathematical Biology and an infectious diseases epidemiologist at the University of Melbourne, Australia, where he holds a split appointment between the School of Mathematics and Statistics and the Melbourne School of Population and Global Health. He holds a PhD in theoretical physics and was awarded an Australian Research Council Future Fellowship (2011-15). His interests span from modelling the within-host dynamics of infection to public health control strategies, with a particular emphasis on influenza and malaria.\nWithin PRISM², James co-leads the respiratory viruses theme, with projects focusing on the host-immune response to influenza and developing real-time outbreak detection and forecasting tools. He has further interests in the emergence of drug-resistance under the emerging diseases theme, with projects on artemisinin resistance for malaria and ivermectin resistance for onchocerciasis.\n\n\nRelated Projects\n\n\nRelated publications\n\nTellioglu N, Chisholm RH, McVernon J, Geard N, Campbell PT (2022) The efficacy of sampling strategies for estimating scabies prevalence. PLOS Neglected Tropical Diseases 16(6): e0010456. https://doi.org/10.1371/journal.pntd.0010456"
+  },
+  {
+    "objectID": "staff.html",
+    "href": "staff.html",
+    "title": "Staff, Students and Affiliates",
+    "section": "",
+    "text": ".flex-grid-thirds {\n    display: flex;\n    flex-flow: row wrap;\n    align-content: center;\n}\n\n.flex-grid-thirds .col {\n    width: 33%;\n    margin-top: 0px;\n    margin-bottom: 2px;\n    margin-right: 2px\n}\n\n@media (max-width: 400px) {\n    .flex-grid-thirds {\n        display: block;\n        .col {\n            width: 100%;\n            margin = 0 0 10px 0;\n        }\n    }\n}\n\n* {\n    box-sizing: border-box;\n}\n.col {\n    padding: 10px;\n    border-style: solid;\n    border-spacing: 20px;\n    border-color: #cbd1cc;\n    border-width: thin;\n    transition: background-color .5s;\n}\n\n.col:hover {\n    background-color: #dcdcdc;\n}\n\nh2 {\n    text-align: center;\n}"
+  },
+  {
+    "objectID": "staff.html#chief-investigators",
+    "href": "staff.html#chief-investigators",
+    "title": "Staff, Students and Affiliates",
+    "section": "Chief Investigators",
+    "text": "Chief Investigators\ncat(\":::: flex-grid-thirds \\n\")\n\nfor (staff_member in staff_list) {\n    if (staff_member$staff_type == \"ci\") {\n        condensr::generate_markdown_for_member(staff_member)\n    }\n}\n\nProf. Jodie McVernon\n\nProfessor and Director of Doherty Epidemiology\nThe Doherty Institute\n\n\nProf. James McCaw\n\nMathematical biologist and infectious diseases epidemiologist\nDepartment of Mathematics and Statistics and Melbourne School of Population and Global Health\nThe University of Melbourne\n\n\nDr Natalie Carvhalo\n\nSenior Research Fellow at the Melbourne School of Population and Global Health\nThe University of Melbourne\n\n\nDr Iadine Chades\n\nTeam leader, Principal Research Scientist\nCSIRO\n\ncat(\"::::\")"
+  },
+  {
+    "objectID": "staff.html#post-doctoral-researchers",
+    "href": "staff.html#post-doctoral-researchers",
+    "title": "Staff, Students and Affiliates",
+    "section": "Post-doctoral Researchers",
+    "text": "Post-doctoral Researchers"
+  },
+  {
+    "objectID": "staff.html#students",
+    "href": "staff.html#students",
+    "title": "Staff, Students and Affiliates",
+    "section": "Students",
+    "text": "Students"
+  },
+  {
+    "objectID": "staff.html#affiliated-researchers",
+    "href": "staff.html#affiliated-researchers",
+    "title": "Staff, Students and Affiliates",
+    "section": "Affiliated Researchers",
+    "text": "Affiliated Researchers\ncat(\":::: flex-grid-thirds \\n\")\n\nfor (staff_member in staff_list) {\n    if (staff_member$staff_type == \"affiliate\") {\n        condensr::generate_markdown_for_member(staff_member)\n    }\n}\n\nDr. Michael Lydeamore\n\nLecturer, Business Analytics\nDepartment of Econometrics and Business Statistics, Monash University\n\ncat(\"::::\")"
+  },
+  {
+    "objectID": "staff_jodie-mcvernon.html",
+    "href": "staff_jodie-mcvernon.html",
+    "title": "Jodie McVernon",
+    "section": "",
+    "text": "About\nProfessor Jodie McVernon is a physician with subspecialty qualifications in public health and vaccinology. She has extensive expertise in clinical vaccine trials, epidemiologic studies and mathematical modelling of infectious diseases, gained at the University of Oxford, Health Protection Agency London and The University of Melbourne. Her work focuses on the application of a range of cross-disciplinary methodological approaches including mathematical and computational models, to synthesise insights from basic biology, epidemiological data and sociological research. These models advance understanding of the observed epidemiology of infectious diseases and inform understanding of optimal interventions for disease control. She is Director of Epidemiology at the Peter Doherty Institute for Infection and Immunity, a joint venture of the University of Melbourne and Royal Melbourne Hospital, and a National Health and Medical Research Council (NHMRC) Principal Research Fellow.\n\n\nRelated Projects\n\n\nRelated publications\n\nTellioglu N, Chisholm RH, McVernon J, Geard N, Campbell PT (2022) The efficacy of sampling strategies for estimating scabies prevalence. PLOS Neglected Tropical Diseases 16(6): e0010456. https://doi.org/10.1371/journal.pntd.0010456"
+  }
+]

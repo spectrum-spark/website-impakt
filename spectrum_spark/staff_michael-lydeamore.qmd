@@ -1,0 +1,52 @@
+---
+title: "Michael Lydeamore"
+image: "images/staff/michael-lydeamore.png"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - text: Email
+      href: "mailto:michael.lydeamore@monash.edu"
+    - text: GitHub
+      href: "https://www.github.com/MikeLydeamore"
+    - text: Twitter
+      href: "https://www.twitter.com/MikeLydeamore"
+
+---
+
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+   
+# About
+Dr Lydeamore is an infectious disease modeller. His current research focuses on
+the dynamics of COVID-19, and quantifying the spread an designing control
+strategies for the spread of antimicrobial resistance in Victorian hospitals, at
+Monash University and The Alfred Central Clinical School. He acquired a PhD from
+The University of Melbourne in 2019 focusing on modelling the spread and control
+of skin infections. He has previously modelled antiviral allocation schemes in
+an influenza pandemic.
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+staff_member <- staff_list[["michael-lydeamore"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```
