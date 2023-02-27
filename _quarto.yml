@@ -13,6 +13,7 @@ website:
           - text: "SPECTRUM/SPARK"
             href: spectrum_spark/index.html
     background: "#F05662"
+    logo: images/Spectrum_Logo_180x_cropped.png
 
   sidebar:
     - title: "SPECTRUM/SPARK"
