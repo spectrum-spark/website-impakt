@@ -30,5 +30,5 @@ website:
 format:
   html:
     theme: cosmo
-    css: theme.css
+    css: [theme.css, custom_scss.scss]
     toc: true
