@@ -1,0 +1,16 @@
+project:
+  type: website
+  output-dir: ../_site/
+
+website:
+  title: "Modelling Consortia"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+
+format:
+  html:
+    theme: cosmo
+    css: [theme.css]
+    toc: true

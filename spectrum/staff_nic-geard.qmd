@@ -1,0 +1,47 @@
+---
+title: "Nic Geard"
+image: "images/staff/nic-geard.jpg"
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+      - text: Email
+        href: "mailto:nicholas.geard@unimelb.edu.au"
+---
+   
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+::: {#about-block}
+
+
+Nic Geard uses computational models to investigate the transmission and control of infectious diseases such as influenza, group A Streptococcus, and COVID-19. He is particularly interested in how rich computational models can capture the influence of demographic, behavioural and pathogen heterogeneity on the spread of diseases, and the implications this heterogeneity has for effective control strategies. 
+  
+Nic is a CI on SPECTRUM. He is Director of the Melbourne Data Analytics Platform [https://mdap.unimelb.edu.au/], a team of research data specialists enabling data-intensive and collaborative research across The University of Melbourne. More broadly, he is interested in the application of computational simulation models to the study of complex biological, social and artificial systems. Past areas of research interest have included the structure and dynamics of gene regulatory networks, the interplay between developmental and evolutionary processes, and the co-evolution of state and topology in dynamic networks.
+
+:::
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+staff_member <- staff_list[["nic-geard"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

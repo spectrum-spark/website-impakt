@@ -117,3 +117,42 @@ h1 {
 .description {
   width: 60% !important;
 }
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.boxes .col {
+  width: 33%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 1px solid #f2f4f7;
+  border-spacing: 50px;
+}
+
+.boxes .col img {
+  width: 95%
+}
+
+.col {
+  padding: 10px;
+  border-style: solid;
+  border-spacing: 20px;
+  border-width: thin;
+  transition: background-color .5s;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col:hover {
+  background-color: #dcdcdc;
+}
+
+* {
+  box-sizing: border-box;
+}

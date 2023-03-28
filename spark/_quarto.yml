@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: ../_site/spark
+
+website:
+  title: "SPARK"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "Consortia"
+        menu:
+          - text: "SPECTRUM/SPARK"
+            href: spectrum_spark/index.html
+          - text: "PRISM^2"
+            href: https://www.prism.edu.au
+    background: "#F05662"
+    logo: images/Spectrum_Logo_180x_cropped.png
+
+  sidebar:
+    - title: "SPECTRUM/SPARK"
+      style: "docked"
+      background: light
+      contents:
+        - text: "Home"
+          href: spectrum_spark/index.html
+        - text: "People"
+          href: spectrum_spark/people.html
+        - text: "Our Partners"
+          href: spectrum_spark/key_collaborators.html
+        
+
+format:
+  html:
+    theme: cosmo
+    css: [theme.css, custom_scss.scss]
+    toc: true

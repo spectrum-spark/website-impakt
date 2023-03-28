@@ -1,0 +1,52 @@
+---
+title: "Jodie McVernon"
+image: "images/staff/jodie-mcvernon.jpg"
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+      - text: Email
+        href: "mailto:j.mcvernon@unimelb.edu.au"
+---
+   
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+::: {#about-block}
+
+
+### Director, SPARK and SPECTRUM
+### Director of Doherty Epidemiology, Doherty Institute, University of Melbourne, Australia
+
+Jodie McVernon is a Monash University Medical Graduate with subspecialty training in Paediatrics, Public Health and Vaccinology. She has extensive expertise in clinical vaccine trials, epidemiologic studies and mathematical modelling of infectious diseases, gained at the University of Oxford, Health Protection Agency London and University of Melbourne. 
+ 
+Jodie is currently Professor and Director of Doherty Epidemiology at the Peter Doherty Institute for Infection and Immunity. Her research group uses a range of biostatistical and epidemiological methods including modelling to synthesise insights gained from basic biology, epidemiological data and sociological research. These outputs advance understanding of the observed epidemiology of infectious diseases and inform predictions of the likely success of interventions to limit transmission and burden in different populations.
+ 
+For the past 18 years she has been building capacity in infectious diseases modelling in Australia and the Asia Pacific Region to support immunization and pandemic preparedness strategies. She has led nationally distributed networks of modellers informing responses to the 2009 H1N1 influenza pandemic and the current COVID-19 pandemic. She contributes to national and global preparedness and response policy through consultancies, direct advice and membership of groups including the Australian Health Protection Principal Committee and the WHO Strategic and Technical Advisory Group on Infection Hazards of Pandemic and Epidemic potential.
+
+:::
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+staff_member <- staff_list[["jodie-mcvernon"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

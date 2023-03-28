@@ -1,0 +1,49 @@
+---
+title: "Iadine Chades"
+image: "images/staff/iadine-chades.jpg"
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+        - text: Email
+          href: "mailto:Iadine.Chades@csiro.au"
+---
+    
+
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+
+::: {#about-block}    
+
+Dr Iadine Chadès provides guidance to managers on how to make decisions under uncertainty in the most efficient way. She is particularly interested in discovering the mechanistic insights underpinning optimal decision-making. Iadine is a Chief Investigator with NHMRC Centre for Research Excellence SPECTRUM. With CSIRO, she is an activity leader with the Machine Learning and AI Future Science Platform. Her research interests lies in making AI and ML solutions trusted and interpretable. More recently, iadine is investigating how to best integrate social sciences and machine learning.
+
+:::
+
+# Related Projects
+
+```{r list-projects}
+#| results: 'asis'
+#| echo: false
+
+staff_member <- staff_list[["iadine-chades"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

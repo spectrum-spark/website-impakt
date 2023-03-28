@@ -1,0 +1,49 @@
+---
+title: "Kathryn Glass"
+image: "images/staff/kathryn-glass.jpg"
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+        - text: Email
+          href: "mailto:kathryn.glass@anu.edu.au"
+---
+    
+
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("load_data.R")
+```
+
+::: {#about-block}    
+
+Professor Kathryn Glass heads the Infectious Disease and Modelling group at the National Centre for Epidemiology and Population Health at the Australian National University. She has a PhD in mathematics from the University of Cambridge, and over 20 years of experience in developing mathematical and statistical models of infectious disease transmission. Professor Glass has special interests in mathematical modelling of infectious diseases to inform public health policy, effects of vaccination on disease outbreaks, modelling intervention strategies for emerging infectious diseases and source attribution for pathogens causing gastroenteritis.
+
+:::
+
+# Related Projects
+
+```{r list-projects}
+#| results: 'asis'
+#| echo: false
+
+staff_member <- staff_list[["kathryn-glass"]]
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

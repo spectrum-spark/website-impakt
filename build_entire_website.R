@@ -1,5 +1,0 @@
-current_dir <- getwd()
-rmarkdown::render_site()
-setwd("spectrum_spark")
-rmarkdown::render_site()
-setwd(current_dir)

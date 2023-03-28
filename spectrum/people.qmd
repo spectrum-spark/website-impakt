@@ -1,0 +1,76 @@
+---
+title: "People"
+---
+
+```{css, echo=FALSE}
+@media (max-width: 400px) and (min-height: 600px) {
+    .boxes {
+        display: block;
+
+        .col {
+            width: 100%;
+            margin=0 0 10px 0;
+        }
+    }
+}
+
+.personimg img {
+    object-fit: contain;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.boxes {
+    justify-content: left;
+}
+
+.col {
+    display: block;
+    max-height: 
+}
+
+.col:hover {
+    background-color: #dcdcdc;
+}
+
+h3 {
+    text-align: center;
+}
+```
+
+```{r setup, include=FALSE}
+#| echo: false
+#| warning: false
+#| message: false
+knitr::opts_chunk$set(echo = FALSE)
+source("load_data.R")
+library(tools)
+```
+
+## Chief Investigators
+```{r, results='asis'}
+flist <- list.files("images/staff")
+cat(":::: boxes \n")
+for (staff_member in staff_list) {
+    if (staff_member$staff_type == "ci") {
+        fileext <- flist[grepl(staff_member$id, flist)] %>% file_ext()
+        condensr::generate_markdown_for_member(staff_member, extension = fileext)
+    }
+}
+cat("::::")
+```
+
+## Post-doctoral Researchers
+
+## Students
+
+## Affiliated Researchers
+```{r, results='asis'}
+cat(":::: boxes \n")
+for (staff_member in staff_list) {
+    if (staff_member$staff_type == "affiliate") {
+        condensr::generate_markdown_for_member(staff_member)
+    }
+}
+cat("::::")
+```

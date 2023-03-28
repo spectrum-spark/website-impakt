@@ -1,0 +1,44 @@
+---
+title: ""
+sidebar: false
+toc: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache = FALSE)
+```
+<style>
+    @media (max-width: 200px) {
+    .flex-grid-thirds {
+        display: block;
+        .col {
+            max-width: 100%;
+            margin = 0 0 10px 0;
+        }
+    }
+}
+</style>
+
+# Currently active consortia
+
+::: {.boxes}
+
+<div class='col' onclick="location.href='spectrum/index.html';"; style='cursor: pointer;'>
+<img src="images/logo_spectrum.png"></img>
+</div>
+
+<div class='col' onclick="location.href='spark/index.html';"; style='cursor: pointer;'>
+<img src="images/logo_spark.png"></img>
+</div>
+
+:::
+
+# Past consortia
+
+::: {.boxes}
+
+<div class='col' onclick="window.open('https\:\/\/www.prism.edu.au');"; style='cursor: pointer;'>
+<img src="images/logo_prism.png"></img>
+</div>
+
+:::
