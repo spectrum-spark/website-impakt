@@ -4,10 +4,6 @@ project:
 
 website:
   title: "Modelling Consortia"
-  navbar:
-    right:
-      - text: "Home"
-        href: index.html
 
 format:
   html:

@@ -20,11 +20,13 @@ source("load_data.R")
 
 ::: {#about-block}    
 
-James McCaw’s primary area of expertise is infectious disease dynamics, with research programs at both the within-host and epidemiological scale. Since 2015 he has held a split appointment between the School of Mathematics and Statistics and Melbourne School of Population and Global Health. From January 2020 to June 2021, James was Associate Dean (Research) in the Faculty of Science. 
- 
-His research in mathematical biology focuses on host-pathogen interactions and within-host dynamics, with research projects in influenza virus dynamics, the immune response to influenza, and malaria infection dynamics. 
- 
-His research in infectious diseases epidemiology and modelling has been fundamental to Australia's planning and response to pandemics, including the COVID-19 pandemic. Since 2005 he has worked closely with the Commonwealth government to apply techniques from applied mathematics and data science to pandemic planning and response. His research has informed development of multiple editions of the Australian Health Management Plan for Pandemic Influenza. Since early 2020, he has led a team of applied mathematicians, epidemiologists, statisticians and biologists providing national real-time situational-assessment advice, including epidemic case and clinical forecasts on COVID-19, to government. He sat on the Australian Health Protection Principal Committee as an invited expert in infectious diseases epidemiology from January 2020 to May 2022 and is an invited expert member of the Communicable Diseases Network of Australia (CDNA).
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["james-mccaw"]]
+cat(pull(staff_member[["bio"]]))
+
+```
 
 :::
 
@@ -34,7 +36,6 @@ His research in infectious diseases epidemiology and modelling has been fundamen
 #| results: 'asis'
 #| echo: false
 
-staff_member <- staff_list[["james-mccaw"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

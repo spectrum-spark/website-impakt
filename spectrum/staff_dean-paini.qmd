@@ -20,7 +20,13 @@ source("load_data.R")
 
 ::: {#about-block}    
 
-Dr Dean Paini leads an interdisciplinary consortium (DiNeMo - https://research.csiro.au/dss/dinemo-disease-networks-mobility/) focused on modelling human movement and the spread of infectious diseases. DiNeMo is a multi-award winning, multi-institution team of researchers with a range of experience, which includes infectious diseases, statistics, computer science, applied mathematics, AI, ecology, and operations research. Such a diverse wealth of expertise and experience enables and facilitates novel solutions to the many data and epidemiological questions that emerge.
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["dean-paini"]]
+cat(pull(staff_member[["bio"]]))
+
+```
 
 :::
 
@@ -30,7 +36,6 @@ Dr Dean Paini leads an interdisciplinary consortium (DiNeMo - https://research.c
 #| results: 'asis'
 #| echo: false
 
-staff_member <- staff_list[["dean-paini"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

@@ -20,10 +20,13 @@ source("load_data.R")
 
 ::: {#about-block}    
 
-Emma McBryde is an infectious diseases physician who did her PhD in mathematics; specifically Mathematical and Statistical modelling of disease transmission in hospitals. Since then, she has moved into modelling infectious diseases of global significance, including influenza, SARS and tuberculosis. Emma has led consultancies for AusAID, DFAT, the Commonwealth Department of Health and participated in Gates funded work on modelling to guide policy in tuberculosis. She is developing work on allocative efficiency for tuberculosis program development in partnership with the Global Fund and the World Bank. 
- 
-Emma is based in the Australian Institute of Tropical Health and Medicine at James Cook University. She continues to collaborate with many researchers in Melbourne where previously to here current role she was Head of Epidemiology at the Victorian Infectious Diseases Service where she had connections to the University of Melbourne and the Burnett institute. She is an elected official of the Australasian Tuberculosis Forum and an affiliate of the CRE in TB research.
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["emma-mcbryde"]]
+cat(pull(staff_member[["bio"]]))
 
+```
 :::
 
 # Related Projects
@@ -32,7 +35,6 @@ Emma is based in the Australian Institute of Tropical Health and Medicine at Jam
 #| results: 'asis'
 #| echo: false
 
-staff_member <- staff_list[["emma-mcbryde"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

@@ -20,9 +20,13 @@ source("load_data.R")
 
 ::: {#about-block}    
 
-Professor Ivo Mueller is a malaria epidemiologist, who is the Co-Division Head of the Population Health and Immunity Division at the WEHI. His research centres on field-based studies of host-vector-parasite interactions, burden and transmission of different Plasmodium species, the treatment and prevention of malaria as well as in-depth studies of natural acquisition of immunity, host genetic modification of malaria risk and the effect of parasite diversity on the host response to malarial infections. A special focus of his work is on the biology, treatment, control and elimination of P. vivax malaria.
- 
- More recently his laboratory has leveraged their experience from malaria serology to develop novel approaches to COVID-19 sero-surveillance and are studying the acquisition and maintenance of immunity to SARS-CoV-2 infections. In parallel, they are supporting health authorities in the Pacific with planning for and managing the COVID-19 pandemic by modelling different SARS-CoV-2 transmission scenarios and development of analytical tools to monitor the local progression of the pandemic.
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["ivo-mueller"]]
+cat(pull(staff_member[["bio"]]))
+
+```
 
 :::
 
@@ -32,7 +36,6 @@ Professor Ivo Mueller is a malaria epidemiologist, who is the Co-Division Head o
 #| results: 'asis'
 #| echo: false
 
-staff_member <- staff_list[["ivo-mueller"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

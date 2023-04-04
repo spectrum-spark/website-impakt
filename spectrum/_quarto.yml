@@ -3,32 +3,23 @@ project:
   output-dir: ../_site/spectrum
 
 website:
-  title: "SPECTRUM"
+  title: "Supporting Participatory Evidence generation to Control Transmissible diseases in our Region Using Modelling"
   navbar:
     right:
       - text: "Home"
         href: index.html
-      - text: "Consortia"
+      - text: "People"
+        href: people.html
+      - text: "Partners"
+        href: key_collaborators.html
+      - text: "Other Consortia"
         menu:
-          - text: "SPECTRUM/SPARK"
-            href: spectrum_spark/index.html
+          - text: "SPARK"
+            href: ../spark/index.html
           - text: "PRISM^2"
             href: https://www.prism.edu.au
     background: "#F05662"
-    logo: images/Spectrum_Logo_180x_cropped.png
-
-  sidebar:
-    - title: "SPECTRUM/SPARK"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Home"
-          href: index.html
-        - text: "People"
-          href: people.html
-        - text: "Our Partners"
-          href: key_collaborators.html
-        
+    logo: ../images/logo_spectrum.png
 
 format:
   html:

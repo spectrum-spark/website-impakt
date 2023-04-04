@@ -8,26 +8,17 @@ website:
     right:
       - text: "Home"
         href: index.html
-      - text: "Consortia"
+      - text: "People"
+        href: people.html
+      - text: "Other Consortia"
         menu:
-          - text: "SPECTRUM/SPARK"
-            href: spectrum_spark/index.html
+          - text: "SPECTRUM"
+            href: ../spectrum/index.html
           - text: "PRISM^2"
             href: https://www.prism.edu.au
     background: "#F05662"
-    logo: images/Spectrum_Logo_180x_cropped.png
-
-  sidebar:
-    - title: "SPECTRUM/SPARK"
-      style: "docked"
-      background: light
-      contents:
-        - text: "Home"
-          href: spectrum_spark/index.html
-        - text: "People"
-          href: spectrum_spark/people.html
-        - text: "Our Partners"
-          href: spectrum_spark/key_collaborators.html
+    logo: ../images/logo_spark.png
+        
         
 
 format:

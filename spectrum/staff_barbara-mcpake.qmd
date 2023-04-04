@@ -18,15 +18,19 @@ source("load_data.R")
 ```
 ::: {#about-block}
 
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["barbara-mcpake"]]
+cat(pull(staff_member[["bio"]]))
 
-Professor Barbara McPake is currently the Director of the Nossal Institute for Global Health, University of Melbourne. Barbara was the Director at the Institute for International Health and Development, Queen Margaret University, Edinburgh until 2014, and held posts at the London School of Hygiene and Tropical Medicine including as Head of the Health Policy Unit and Director of the Health Systems Knowledge Program, until 2005. She was one of two Research Directors of ‘REBUILD’ a UK Department for International Development funded Research Programme Consortium on health systems development. Barbara has extensive research degree supervision and other postgraduate teaching experience and extensive international experience in health systems research and policy analysis and advice to UN agencies and low and middle income country governments.
+```
 
 :::
 
 # Related Projects
 
 ```{r list-projects, results = 'asis', echo = FALSE}
-staff_member <- staff_list[["barbara-mcpake"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

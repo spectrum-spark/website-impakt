@@ -14,7 +14,6 @@ staff_list <- lapply(1:nrow(staff_csv), function(i) {
         internal_link = staff_csv[i, "internal_link"] %>% pull()
     )
     member[["staff_type"]] <- staff_csv[i, "staff_type"]
-    member[["bio"]] <- staff_csv[i, "bio"]
 
     return(member)
 })

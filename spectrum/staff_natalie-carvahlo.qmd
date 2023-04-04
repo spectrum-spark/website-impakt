@@ -18,17 +18,19 @@ source("load_data.R")
 ```
 ::: {#about-block}
 
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["natalie-carvahlo"]]
+cat(pull(staff_member[["bio"]]))
 
-Natalie Carvalho is a Senior Research Fellow in the Health Economics Unit, Centre for Health Policy, at Melbourne School of Population and Global Health, where she leads the Global Health Research Area. She is a former recipient of the University of Melbourne McKenzie Postdoctoral Fellowship, which was established to attract outstanding recent doctoral graduates to the University in areas of research priority for the university and its faculties, and in particular to recruit new researchers who have the potential to build and lead cross-disciplinary collaborative research activities inside and across faculties. 
- 
-Natalie's research focuses primarily on priority-setting of health interventions in low- and middle-income countries using cost-effectiveness analysis. Her research further aims to incorporate equity and budgetary considerations into cost-effectiveness analyses of interventions to improve maternal and child health in low- and middle-income countries, in particular in relation to childhood vaccines. Natalie's research interests include health inequalities, maternal and child health, vaccine-preventable diseases, and quality of care, with a focus on low- and middle-income countries in the Asia Pacific Region. She has conducted impact evaluations and health economic evaluations to inform allocation of resources in resource-poor settings. Natalie received her BSc (Chemistry) from McGill University, MPH (Epidemiology) from Boston University, and PhD in Health Policy (Decision Sciences) from Harvard University.
+```
 
 :::
 
 # Related Projects
 
 ```{r list-projects, results = 'asis', echo = FALSE}
-staff_member <- staff_list[["natalie-carvahlo"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

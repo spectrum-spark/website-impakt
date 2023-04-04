@@ -20,7 +20,13 @@ source("load_data.R")
 
 ::: {#about-block}    
 
-Dr Iadine Chadès provides guidance to managers on how to make decisions under uncertainty in the most efficient way. She is particularly interested in discovering the mechanistic insights underpinning optimal decision-making. Iadine is a Chief Investigator with NHMRC Centre for Research Excellence SPECTRUM. With CSIRO, she is an activity leader with the Machine Learning and AI Future Science Platform. Her research interests lies in making AI and ML solutions trusted and interpretable. More recently, iadine is investigating how to best integrate social sciences and machine learning.
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["iadine-chades"]]
+cat(pull(staff_member[["bio"]]))
+
+```
 
 :::
 
@@ -30,7 +36,6 @@ Dr Iadine Chadès provides guidance to managers on how to make decisions under u
 #| results: 'asis'
 #| echo: false
 
-staff_member <- staff_list[["iadine-chades"]]
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)
