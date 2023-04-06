@@ -1,6 +1,9 @@
 ---
 title: "Jodie McVernon"
 image: "../images/staff/jodie-mcvernon.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

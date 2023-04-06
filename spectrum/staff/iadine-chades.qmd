@@ -1,6 +1,9 @@
 ---
 title: "Iadine Chades"
 image: "../images/staff/iadine-chades.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

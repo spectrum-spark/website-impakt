@@ -1,6 +1,9 @@
 ---
 title: "Kathryn Glass"
 image: "../images/staff/kathryn-glass.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

@@ -1,6 +1,9 @@
 ---
 title: "Nic Geard"
 image: "../images/staff/nic-geard.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

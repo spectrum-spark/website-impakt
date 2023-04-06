@@ -1,6 +1,9 @@
 ---
 title: "Dean Paini"
 image: "../images/staff/dean-paini.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

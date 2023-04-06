@@ -1,6 +1,9 @@
 ---
 title: "Ivo Mueller"
 image: "../images/staff/ivo-mueller.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

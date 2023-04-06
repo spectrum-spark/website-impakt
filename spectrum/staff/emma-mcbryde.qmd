@@ -1,6 +1,9 @@
 ---
 title: "Emma McBryde"
 image: "../images/staff/emma-mcbryde.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles

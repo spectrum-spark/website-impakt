@@ -1,6 +1,9 @@
 ---
 title: "Barbara McPake"
 image: "../images/staff/barbara-mcpake.jpg"
+format:
+  html:
+    page-layout: full
 about:
     id: about-block
     template: trestles
