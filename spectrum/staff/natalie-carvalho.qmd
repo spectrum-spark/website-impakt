@@ -1,24 +1,26 @@
 ---
 title: "Natalie Carvalho"
-image: "../images/staff/natalie-carvalho.jpg"
+image: "../images/staff/natalie-carvalho.png"
+format:
+  html:
+    page-layout: full
 about:
-    id: about-block
-    template: trestles
-    image-shape: round
-    links:
-      - icon: envelope
-        text: "Email"
-        href: "mailto:natalie.carvalho@unimelb.edu.au"
-      - icon: linkedin
-        text: "LinkedIn"
-        href: "https://www.linkedin.com/in/natalie-carvalho-898203"
-      - icon: twitter
-        text: "@nat_carvalho1"
-        href: "https://www.twitter.com/nat_carvalho1"
-      - icon: globe
-        text: "More"
-        href: "https://findanexpert.unimelb.edu.au/profile/531653-natalie-carvalho"
-
+  template: trestles
+  image-shape: round
+  id: about-block
+  links:
+    - icon: envelope
+      text: "Email"
+      href: "mailto:natalie.carvalho@unimelb.edu.au"
+    - icon: linkedin
+      text: "LinkedIn"
+      href: "https://linkedin.com/in/natalie-carvalho-898203"
+    - icon: twitter
+      text: "@nat_carvalho1"
+      href: "https://www.twitter.com/nat_carvalho1"
+    - icon: globe
+      text: "More"
+      href: "https://findanexpert.unimelb.edu.au/profile/531653-natalie-carvalho"
 
 ---
    
