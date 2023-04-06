@@ -10,6 +10,7 @@ about:
   id: about-block
   links:
     - icon: envelope
+      text: "Email"
       href: "mailto:michael.lydeamore@monash.edu"
     - icon: github
       text: "GitHub"
