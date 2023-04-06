@@ -2,14 +2,19 @@ library(condensr)
 library(dplyr)
 library(googlesheets4)
 
-staff_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1sVQZRazo_zGcQkgP_WhMsIEhnye1Cr4l5b8Tqi8pVq8/edit#gid=303417326") %>%
-    filter(!is.na(id))
+staff_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1sVQZRazo_zGcQkgP_WhMsIEhnye1Cr4l5b8Tqi8pVq8/edit#gid=303417326") |>
+    filter(!is.na(id)) |>
+    separate_longer_delim(c(staff_type, consortia), delim = ",") |>
+    filter(consortia == "spectrum")
 
 staff_list <- lapply(1:nrow(staff_csv), function(i) {
     member <- staff_member(
         id = staff_csv[i, "id"] %>% pull(),
         name = staff_csv[i, "name"] %>% pull(),
-        description = staff_csv[i, "description"] %>% pull(),
+        description = paste(
+            staff_csv[i, c("role_in_org", "organisation")],
+            collapse = "\n\n"
+        ),
         external_link = staff_csv[i, "external_link"] %>% pull(),
         internal_link = staff_csv[i, "internal_link"] %>% pull()
     )
