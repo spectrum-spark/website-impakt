@@ -1,27 +1,39 @@
 ---
-title: "Barbara McPake"
-image: "images/staff/barbara-mcpake.jpg"
+title: "Natalie Carvalho"
+image: "../images/staff/natalie-carvalho.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-      - text: Email
-        href: "mailto:j.mcvernon@unimelb.edu.au"
+      - icon: envelope
+        text: "Email"
+        href: "mailto:natalie.carvalho@unimelb.edu.au"
+      - icon: linkedin
+        text: "LinkedIn"
+        href: "https://www.linkedin.com/in/natalie-carvalho-898203"
+      - icon: twitter
+        text: "@nat_carvalho1"
+        href: "https://www.twitter.com/nat_carvalho1"
+      - icon: globe
+        text: "More"
+        href: "https://findanexpert.unimelb.edu.au/profile/531653-natalie-carvalho"
+
+
 ---
    
 ```{r setup}
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 ::: {#about-block}
 
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["barbara-mcpake"]]
+staff_member <- staff_list[["natalie-carvalho"]]
 cat(pull(staff_member[["bio"]]))
 
 ```

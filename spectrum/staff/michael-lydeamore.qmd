@@ -1,36 +1,43 @@
 ---
-title: "Jodie McVernon"
-image: "images/staff/jodie-mcvernon.jpg"
+title: "Michael Lydeamore"
+image: "../images/staff/michael-lydeamore.png"
 about:
-    id: about-block
-    template: trestles
-    image-shape: round
-    links:
-      - text: Email
-        href: "mailto:j.mcvernon@unimelb.edu.au"
+  template: trestles
+  image-shape: round
+  id: about-block
+  links:
+    - icon: envelope
+      href: "mailto:michael.lydeamore@monash.edu"
+    - icon: github
+      text: "GitHub"
+      href: "https://www.github.com/MikeLydeamore"
+    - icon: twitter
+      text: "@MikeLydeamore"
+      href: "https://www.twitter.com/MikeLydeamore"
+    - icon: globe
+      text: "More"
+      href: "https://research.monash.edu/en/persons/michael-lydeamore"
+
 ---
-   
+
 ```{r setup}
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
+   
 ::: {#about-block}
-
-
-### Director, SPARK and SPECTRUM
-### Director of Doherty Epidemiology, Doherty Institute, University of Melbourne, Australia
 
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["jodie-mcvernon"]]
+staff_member <- staff_list[["michael-lydeamore"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
 
-:::
+::: 
 
 # Related Projects
 
@@ -42,7 +49,7 @@ for (project in project_list) {
 }
 ```
 
-# Related publications
+# Related Publications
 
 ```{r list-publications, results='asis', echo=FALSE}
 for (publication in publication_list) {

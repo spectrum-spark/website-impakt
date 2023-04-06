@@ -1,13 +1,17 @@
 ---
-title: "Ivo Mueller"
-image: "images/staff/ivo-mueller.jpg"
+title: "Emma McBryde"
+image: "../images/staff/emma-mcbryde.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
-          href: "mailto:mueller@wehi.edu.au"
+        - icon: envelope
+          text: "Email"
+          href: "mailto:emma.mcbryde@jcu.edu.au"
+        - icon: globe
+          text: "More"
+          href: "https://research.jcu.edu.au/portfolio/emma.mcbryde/"
 ---
     
 
@@ -15,7 +19,7 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 
 ::: {#about-block}    
@@ -23,11 +27,10 @@ source("load_data.R")
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["ivo-mueller"]]
+staff_member <- staff_list[["emma-mcbryde"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
-
 :::
 
 # Related Projects

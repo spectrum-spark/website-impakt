@@ -1,13 +1,17 @@
 ---
-title: "James McCaw"
-image: "images/staff/james-mccaw.jpg"
+title: "Kathryn Glass"
+image: "../images/staff/kathryn-glass.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
-          href: "mailto:jamesm@unimelb.edu.au"
+        - icon: envelope
+          text: "Email"
+          href: "mailto:kathryn.glass@anu.edu.au"
+        - icon: globe
+          text: "More"
+          href: "https://nceph.anu.edu.au/people/academics/professor-kathryn-glass"
 ---
     
 
@@ -15,7 +19,7 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 
 ::: {#about-block}    
@@ -23,11 +27,10 @@ source("load_data.R")
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["james-mccaw"]]
+staff_member <- staff_list[["kathryn-glass"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
-
 :::
 
 # Related Projects

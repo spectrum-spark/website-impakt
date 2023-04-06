@@ -1,13 +1,17 @@
 ---
 title: "Dean Paini"
-image: "images/staff/dean-paini.jpg"
+image: "../images/staff/dean-paini.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
+        - icon: envelope
+          text: "Email"
           href: "mailto:Dean.Paini@csiro.au"
+        - icon: globe
+          text: "More"
+          href: "https://people.csiro.au/P/D/Dean-Paini"
 ---
     
 
@@ -15,7 +19,7 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 
 ::: {#about-block}    

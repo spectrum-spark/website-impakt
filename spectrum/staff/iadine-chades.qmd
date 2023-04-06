@@ -1,13 +1,17 @@
 ---
-title: "Emma McBryde"
-image: "images/staff/emma-mcbryde.jpg"
+title: "Iadine Chades"
+image: "../images/staff/iadine-chades.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
-          href: "mailto:emma.mcbryde@jcu.edu.au"
+        - icon: envelope
+          text: "Email"
+          href: "mailto:Iadine.Chades@csiro.au"
+        - icon: globe
+          text: "More"
+          href: "https://people.csiro.au/C/I/Iadine-Chades"
 ---
     
 
@@ -15,7 +19,7 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 
 ::: {#about-block}    
@@ -23,10 +27,11 @@ source("load_data.R")
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["emma-mcbryde"]]
+staff_member <- staff_list[["iadine-chades"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
+
 :::
 
 # Related Projects

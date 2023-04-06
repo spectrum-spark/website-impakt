@@ -1,13 +1,17 @@
 ---
-title: "Iadine Chades"
-image: "images/staff/iadine-chades.jpg"
+title: "Ivo Mueller"
+image: "../images/staff/ivo-mueller.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
-          href: "mailto:Iadine.Chades@csiro.au"
+        - icon: envelope
+          text: "Email"
+          href: "mailto:mueller@wehi.edu.au"
+        - icon: globe
+          text: "More"
+          href: "https://www.wehi.edu.au/people/ivo-mueller"
 ---
     
 
@@ -15,7 +19,7 @@ about:
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
 
 ::: {#about-block}    
@@ -23,7 +27,7 @@ source("load_data.R")
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["iadine-chades"]]
+staff_member <- staff_list[["ivo-mueller"]]
 cat(pull(staff_member[["bio"]]))
 
 ```

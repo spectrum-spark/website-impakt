@@ -14,7 +14,7 @@ website:
         menu:
           - text: "SPECTRUM"
             href: ../spectrum/index.html
-          - text: "PRISM^2"
+          - text: "PRISM<sup>2</sup>"
             href: https://www.prism.edu.au
     background: "#F05662"
     logo: ../images/logo_spark.png

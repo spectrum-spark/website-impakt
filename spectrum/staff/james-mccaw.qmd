@@ -1,27 +1,33 @@
 ---
-title: "Natalie Carvahlo"
-image: "images/staff/natalie-carvhalo.jpg"
+title: "James McCaw"
+image: "../images/staff/james-mccaw.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-      - text: Email
-        href: "mailto:natalie.carvalho@unimelb.edu.au"
+        - icon: envelope
+          text: "Email"
+          href: "mailto:jamesm@unimelb.edu.au"
+        - icon: globe
+          text: "More"
+          href: "https://findanexpert.unimelb.edu.au/profile/4554-james-mccaw"
 ---
-   
+    
+
 ```{r setup}
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
-::: {#about-block}
+
+::: {#about-block}    
 
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["natalie-carvahlo"]]
+staff_member <- staff_list[["james-mccaw"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
@@ -30,7 +36,10 @@ cat(pull(staff_member[["bio"]]))
 
 # Related Projects
 
-```{r list-projects, results = 'asis', echo = FALSE}
+```{r list-projects}
+#| results: 'asis'
+#| echo: false
+
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)

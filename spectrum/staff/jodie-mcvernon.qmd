@@ -1,40 +1,44 @@
 ---
-title: "Kathryn Glass"
-image: "images/staff/kathryn-glass.jpg"
+title: "Jodie McVernon"
+image: "../images/staff/jodie-mcvernon.jpg"
 about:
     id: about-block
     template: trestles
     image-shape: round
     links:
-        - text: Email
-          href: "mailto:kathryn.glass@anu.edu.au"
+      - icon: envelope
+        text: "Email"
+        href: "mailto:j.mcvernon@unimelb.edu.au"
+      - icon: linkedin
+        text: "LinkedIn"
+        href: "https://au.linked.in.com/in/jodie-mcvernon-5281b764"
 ---
-    
-
+   
 ```{r setup}
 #| echo: false
 #| warning: false
 #| message: false
-source("load_data.R")
+source("../load_data.R")
 ```
+::: {#about-block}
 
-::: {#about-block}    
+
+### Director, SPARK and SPECTRUM
+### Director of Doherty Epidemiology, Doherty Institute, University of Melbourne, Australia
 
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["kathryn-glass"]]
+staff_member <- staff_list[["jodie-mcvernon"]]
 cat(pull(staff_member[["bio"]]))
 
 ```
+
 :::
 
 # Related Projects
 
-```{r list-projects}
-#| results: 'asis'
-#| echo: false
-
+```{r list-projects, results = 'asis', echo = FALSE}
 for (project in project_list) {
     if (staff_member$id %in% project$related_staff) {
         generate_markdown_for_projects(project)
