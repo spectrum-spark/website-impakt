@@ -47,7 +47,7 @@ source("load_data.R")
 library(tools)
 ```
 
-## Chief Investigators
+## Chief Investigators and Executive
 ```{r, results='asis'}
 flist <- list.files("images/staff")
 cat(":::: boxes \n")
@@ -60,15 +60,24 @@ for (staff_member in staff_list) {
 cat("::::")
 ```
 
-## Post-doctoral Researchers
+## Research and Support Staff
 
-## Students
-
-## Affiliated Researchers
 ```{r, results='asis'}
 cat(":::: boxes \n")
 for (staff_member in staff_list) {
-    if (staff_member$staff_type == "affiliate") {
+    if (staff_member$staff_type == "staff") {
+        condensr::generate_markdown_for_member(staff_member)
+    }
+}
+cat("::::")
+```
+
+## Students
+
+```{r, results='asis'}
+cat(":::: boxes \n")
+for (staff_member in staff_list) {
+    if (staff_member$staff_type == "student") {
         condensr::generate_markdown_for_member(staff_member)
     }
 }
