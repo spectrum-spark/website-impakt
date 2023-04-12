@@ -20,6 +20,7 @@ website:
             href: https://www.prism.edu.au
     background: "#F05662"
     logo: ../images/logo_spectrum.png
+  favicon: images/favicon.png
 
 format:
   html:
