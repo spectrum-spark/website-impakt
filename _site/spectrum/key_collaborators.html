@@ -138,55 +138,111 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<style>
-.flex-grid-thirds {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-}
-
-.flex-grid-thirds .col2 {
-    width: 33%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.flex-grid-thirds .col2 img {
-    width: 95%;
-}
-
-@media (max-width: 160px) {
-    .flex-grid-thirds {
+<div class="cell">
+<style type="text/css">
+@media (max-width: 400px) and (min-height: 600px) {
+    .boxes {
         display: block;
-        .col2 {
-            max-width: 100%;
-            margin = 0 0 10px 0;
+
+        .col {
+            width: 100%;
+            margin=0 0 10px 0;
         }
     }
 }
 
-* {
-    box-sizing: border-box;
-}
-.col2 {
-    padding: 10px;
+.personimg img {
+    object-fit: contain;
+    max-height: 200px;
+    min-height: 200px;
 }
 
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.boxes {
+    justify-content: left;
+}
+
+.col:hover {
+    background-color: #dcdcdc;
+}
+
+.col {
+    min-height: 150px !important;
+    max-height: 150px !important;
+}
+
+.col p {
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+.col img {
+    height: auto;
+    max-height: 150px;
+}
+
+h3 {
+    text-align: center;
 }
 </style>
+</div>
 <section id="domestic-collaborators" class="level1">
 <h1>Domestic Collaborators</h1>
-<div class="flex-grid-thirds">
+<div class="boxes">
 <div class="col">
-<p><a href="https://www.mcri.edu.au/"><img src="images/collaborators/mcri_logo.png"> </a></p>
+<p><a href="https://www.mcri.edu.au/"><img src="images/collaborators/logo_mcri.png"> </a></p>
 </div>
 <div class="col">
-<p><a href="https://kirby.unsw.edu.au/"><img src="images/collaborators/kirby_institute_logo.png"> </a></p>
+<p><a href="https://kirby.unsw.edu.au/"><img src="images/collaborators/logo_kirby_institute.png"> </a></p>
 </div>
 <div class="col">
-<p><a href="https://www.menzies.edu.au/"><img src="images/collaborators/menzies_logo.png"> </a></p>
+<p><a href="https://www.menzies.edu.au/"><img src="images/collaborators/logo_menzies.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.qut.edu.au/"><img src="images/collaborators/logo_qut.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://info.tupaia.org/"><img src="images/collaborators/logo_tupaia.jpg"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www1.health.gov.au/internet/main/publishing.nsf/Content/cda-cdna-phln-index.htm"><img src="images/collaborators/logo_phln.jpg"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.dhhs.vic.gov.au/"><img src="images/collaborators/logo_vic_state_gov.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.csiro.au/"><img src="images/collaborators/logo_csiro.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.anu.edu.au/"><img src="images/collaborators/logo_anu.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.burnet.edu.au/"><img src="images/collaborators/logo_burnet.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.latrobe.edu.au/"><img src="images/collaborators/logo_latrobe.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.monash.edu/"><img src="images/collaborators/logo_monash.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.jcu.edu.au/"><img src="images/collaborators/logo_jcu.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.unsw.edu.au/"><img src="images/collaborators/logo_unsw.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="http://www.tb-modelling.com/"><img src="images/collaborators/logo_autumn.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.tbcre.org.au/"><img src="images/collaborators/logo_tb_cre.jpg"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.dfat.gov.au/"><img src="images/collaborators/logo_dfat.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.apprise.org.au/"><img src="images/collaborators/logo_apprise.png"> </a></p>
+</div>
+<div class="col">
+<p><a href="https://www.wehi.edu.au/"><img src="images/collaborators/logo_wehi.png"> </a></p>
 </div>
 </div>
 

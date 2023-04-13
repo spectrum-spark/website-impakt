@@ -66,7 +66,8 @@ cat("::::")
 cat(":::: boxes \n")
 for (staff_member in staff_list) {
     if (staff_member$staff_type == "researcher" | staff_member$staff_type == "researcher-support") {
-        condensr::generate_markdown_for_member(staff_member)
+        fileext <- flist[grepl(staff_member$id, flist)] %>% file_ext()
+        condensr::generate_markdown_for_member(staff_member, extension = fileext)
     }
 }
 cat("::::")
