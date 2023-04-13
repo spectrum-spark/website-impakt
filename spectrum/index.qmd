@@ -1,6 +1,12 @@
 ---
-title: "SPECTRUM-SPARK Modelling Consortium"
+title: "SPECTRUM Modelling Consortium"
 toc: false
+format:
+    html:
+        page-layout: full
+title-block-banner: images/home_bg.png
+description: "A Centre of Research Excellence aimed at enhancing national and regional decision making to improve the control of infectious diseases, strengthen health systems and reduce these risks in Australia and the Asia Pacific region through collaboration, partnerships and model-based evidence to aid decision making."
+title-block-banner-color: "#FFFFFF"
 ---
 
 

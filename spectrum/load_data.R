@@ -41,3 +41,8 @@ publication_list <- lapply(1:nrow(publication_csv), function(i) {
         date = as.Date(publication_csv[i, "date"] %>% pull())
     )
 })
+
+publication_list <- publication_list[
+    order(sapply(publication_list, "[[", "date"), decreasing = TRUE)
+]
+

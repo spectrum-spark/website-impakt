@@ -65,7 +65,7 @@ cat("::::")
 ```{r, results='asis'}
 cat(":::: boxes \n")
 for (staff_member in staff_list) {
-    if (staff_member$staff_type == "staff") {
+    if (staff_member$staff_type == "researcher" | staff_member$staff_type == "researcher-support") {
         condensr::generate_markdown_for_member(staff_member)
     }
 }

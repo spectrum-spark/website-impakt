@@ -12,13 +12,16 @@ website:
         href: people.html
       - text: "Partners"
         href: key_collaborators.html
+      - text: "Publications"
+        href: publications.html
       - text: "Other Consortia"
         menu:
           - text: "SPARK"
             href: ../spark/index.html
           - text: "PRISM<sup>2</sup>"
             href: https://www.prism.edu.au
-    background: "#F05662"
+    foreground: "#F05662"
+    background: "#FFFFFF"
     logo: ../images/logo_spectrum.png
   favicon: images/favicon.png
 
