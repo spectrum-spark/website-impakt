@@ -1,0 +1,60 @@
+---
+title: "Jodie McVernon"
+image: "../images/staff/jodie-mcvernon.jpg"
+format:
+  html:
+    page-layout: full
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+      - icon: envelope
+        text: "Email"
+        href: "mailto:j.mcvernon@unimelb.edu.au"
+      - icon: linkedin
+        text: "LinkedIn"
+        href: "https://au.linked.in.com/in/jodie-mcvernon-5281b764"
+---
+   
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("../load_data.R")
+```
+::: {#about-block}
+
+
+### Director, SPARK and SPECTRUM
+### Director of Doherty Epidemiology, Doherty Institute, University of Melbourne, Australia
+
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["jodie-mcvernon"]]
+cat(pull(staff_member[["bio"]]))
+
+```
+
+:::
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

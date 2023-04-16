@@ -1,0 +1,53 @@
+---
+title: "Barbara McPake"
+image: "../images/staff/barbara-mcpake.jpg"
+format:
+  html:
+    page-layout: full
+about:
+    id: about-block
+    template: trestles
+    image-shape: round
+    links:
+      - icon: envelope
+        text: "Email"
+        href: "mailto:barbara.mcpake@unimelb.edu.au"
+---
+   
+```{r setup}
+#| echo: false
+#| warning: false
+#| message: false
+source("../load_data.R")
+```
+::: {#about-block}
+
+```{r bio}
+#| results: asis
+#| echo: false
+staff_member <- staff_list[["barbara-mcpake"]]
+cat(pull(staff_member[["bio"]]))
+
+```
+
+:::
+
+# Related Projects
+
+```{r list-projects, results = 'asis', echo = FALSE}
+for (project in project_list) {
+    if (staff_member$id %in% project$related_staff) {
+        generate_markdown_for_projects(project)
+    }
+}
+```
+
+# Related publications
+
+```{r list-publications, results='asis', echo=FALSE}
+for (publication in publication_list) {
+    if (staff_member$id %in% publication$related_staff) {
+        generate_markdown_for_publications(publication)
+    }
+}
+```

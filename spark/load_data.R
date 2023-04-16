@@ -1,19 +1,26 @@
 library(condensr)
 library(dplyr)
 library(googlesheets4)
+library(tidyr)
 
-staff_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1sVQZRazo_zGcQkgP_WhMsIEhnye1Cr4l5b8Tqi8pVq8/edit#gid=303417326") %>%
-    filter(!is.na(id))
+staff_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1sVQZRazo_zGcQkgP_WhMsIEhnye1Cr4l5b8Tqi8pVq8/edit#gid=303417326") |>
+    filter(!is.na(id)) |>
+    separate_longer_delim(c(staff_type, consortia), delim = ",") |>
+    filter(consortia == "spark")
 
 staff_list <- lapply(1:nrow(staff_csv), function(i) {
     member <- staff_member(
         id = staff_csv[i, "id"] %>% pull(),
         name = staff_csv[i, "name"] %>% pull(),
-        description = staff_csv[i, "description"] %>% pull(),
+        description = paste(
+            staff_csv[i, c("role_in_org", "organisation")],
+            collapse = "\n\n"
+        ),
         external_link = staff_csv[i, "external_link"] %>% pull(),
         internal_link = staff_csv[i, "internal_link"] %>% pull()
     )
     member[["staff_type"]] <- staff_csv[i, "staff_type"]
+    member[["bio"]] <- staff_csv[i, "bio"]
 
     return(member)
 })
@@ -34,3 +41,7 @@ publication_list <- lapply(1:nrow(publication_csv), function(i) {
         date = as.Date(publication_csv[i, "date"] %>% pull())
     )
 })
+
+publication_list <- publication_list[
+    order(sapply(publication_list, "[[", "date"), decreasing = TRUE)
+]

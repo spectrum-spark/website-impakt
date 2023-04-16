@@ -2,23 +2,30 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "SPARK: Strengthening preparedness in the Asia-Pacific region through knowlege",
+    "title": "SPARK",
     "section": "",
     "text": "SPARK is an international consortium aimed at strengthening preparedness in the Asia-Pacific region through knowledge, under the ASEAN-Pacific Infectious Disease and Response program (APIDDaR). The consortium includes collaborations from globally recognized public health institutions in Australia and the Asia Pacific region. The program areas focus on public health workforce development and strengthening outbreak detection and management systems and processes, to ultimately increase regional capacity using quantitative methods and modelling.\nBased at the Peter Doherty Institute for Infection and Immunity at the University of Melbourne (UoM) in Melbourne, Australia, the SPARK consortium includes:\nNossal Institute for Global Health Walter and Eliza Hall Institute (WEHI) Australian National University (ANU) CSIRO (Commonwealth Scientific and Industrial Research Organisations) Mahidol University, Thailand Pasteur Institute, Ho Chi Minh City, Vietnam The Eijkman-Oxford Clinical Research Unit, Indonesia\nSPARK is an acronym for Strengthening Preparedness in the Asia-Pacific Region through Knowledge, and builds on the PRISM2 CRE.\nAlthough SPARK is based in Melbourne at the Peter Doherty Institute for Infection and Immunity, our partners and collaborators work globally, with a central focus on Australia and the Asia-Pacific region."
   },
   {
-    "objectID": "people.html#chief-investigators",
-    "href": "people.html#chief-investigators",
-    "title": "People",
-    "section": "Chief Investigators",
-    "text": "Chief Investigators\n\n\n\n\n\n\nProf. Jodie McVernon\nProfessor and Director of Doherty Epidemiology\nThe Doherty Institute\n\n\n\n\n\n\n\nProf Barbara McPake\n\n\n\n\n\n\n\nA/Prof Nic Geard\n\n\n\n\n\n\n\nDr Natalie Carvhalo\nSenior Research Fellow at the Melbourne School of Population and Global Health\nThe University of Melbourne\n\n\n\n\n\n\n\nProf. James McCaw\nMathematical biologist and infectious diseases epidemiologist\nDepartment of Mathematics and Statistics and Melbourne School of Population and Global Health\nThe University of Melbourne\n\n\n\n\n\n\n\nDr Iadine Chades\nTeam leader, Principal Research Scientist\nCSIRO\n\n\n\n\n\n\n\nProf Kathryn Glass\n\n\n\n\n\n\n\nProf Ivo Mueller\n\n\n\n\n\n\n\nProf Emma McBryde\n\n\n\n\n\n\n\nDr Dean Paini"
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "This page shows all the publications produced as part of this consortia. The list is searchable, and you can click the globe on any row to be taken to the journal webpage for the full paper."
   },
   {
-    "objectID": "people.html#post-doctoral-researchers",
-    "href": "people.html#post-doctoral-researchers",
+    "objectID": "people.html#chief-investigators-and-executive",
+    "href": "people.html#chief-investigators-and-executive",
     "title": "People",
-    "section": "Post-doctoral Researchers",
-    "text": "Post-doctoral Researchers"
+    "section": "Chief Investigators and Executive",
+    "text": "Chief Investigators and Executive\n\n\n\n\n\n\nProf. Jodie McVernon\nDirector of Doherty Epidemiology\nDoherty Institute, University of Melbourne\n\n\n\n\n\n\n\nProf Barbara McPake\nDirector\nNossal Institute for Global Health, University of Melbourne\n\n\n\n\n\n\n\nProf Kathryn Glass\nHead of the Infectious disease Epidemiology and Modelling group\nNational Centre for Epidemiology and Population Health, Australian National University\n\n\n\n\n\n\n\nProf Ivo Mueller\nJoint Division Head, Population Health and Immunity\nWEHI\n\n\n\n\n\n\n\nDr Dean Paini\nPrincipal Research Scientist\nCSIRO"
+  },
+  {
+    "objectID": "people.html#research-and-support-staff",
+    "href": "people.html#research-and-support-staff",
+    "title": "People",
+    "section": "Research and Support Staff",
+    "text": "Research and Support Staff\n\n\nDr. Michael Lydeamore\nLecturer, Business Analytics\nDepartment of Econometrics and Business Statistics, Monash University\n\n\nDr. Iqbal Elyazar\nBiostatistician, Programme Manager of Geospatial Epidemiology\nOxford University Clinical Research Unit Indonesia (OUCRU ID)\n\n\n\n\n\n\nSonja Firth\nNA\nNossal Institute for Global Health, University of Melbourne\n\n\n\n\n\n\n\nLaura Bannerman\nNA\nDoherty Institute, University of Melbourne\n\n\n\n\n\n\n\nJohanna Monk\nNA\nDoherty Institute, University of Melbourne"
   },
   {
     "objectID": "people.html#students",
@@ -28,10 +35,45 @@
     "text": "Students"
   },
   {
-    "objectID": "people.html#affiliated-researchers",
-    "href": "people.html#affiliated-researchers",
-    "title": "People",
-    "section": "Affiliated Researchers",
-    "text": "Affiliated Researchers\n\n\n\n\n\n\nDr. Michael Lydeamore\nLecturer, Business Analytics\nDepartment of Econometrics and Business Statistics, Monash University"
+    "objectID": "staff/michael-lydeamore.html",
+    "href": "staff/michael-lydeamore.html",
+    "title": "Michael Lydeamore",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     @MikeLydeamore\n  \n  \n    \n     More\n  \n\n  \n  \nDr Lydeamore is an infectious disease modeller. His current research focuses on the dynamics of COVID-19, and quantifying the spread an designing control strategies for the spread of antimicrobial resistance in Victorian hospitals, at Monash University and The Alfred Central Clinical School. He acquired a PhD from The University of Melbourne in 2019 focusing on modelling the spread and control of skin infections. He has previously modelled antiviral allocation schemes in an influenza pandemic.\n\n\n\n\nRelated Projects\n\n\nRelated Publications\n\nZachreson, C., Shearer, F.M., Price, D.J., Lydeamore, M.J., McVernon, J., McCaw, J. and Geard, N., 2022. COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science Advances, 8(14), p.eabm3624."
+  },
+  {
+    "objectID": "staff/kathryn-glass.html",
+    "href": "staff/kathryn-glass.html",
+    "title": "Kathryn Glass",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     More\n  \n\n  \n  \nProfessor Kathryn Glass heads the Infectious Disease and Modelling group at the National Centre for Epidemiology and Population Health at the Australian National University. She has a PhD in mathematics from the University of Cambridge, and over 20 years of experience in developing mathematical and statistical models of infectious disease transmission. Professor Glass has special interests in mathematical modelling of infectious diseases to inform public health policy, effects of vaccination on disease outbreaks, modelling intervention strategies for emerging infectious diseases and source attribution for pathogens causing gastroenteritis.\n\n\n\n\nRelated Projects\n\n\nRelated publications\n\nMoss, R., Wood, J., Brown, D., Shearer, F.M., Black, A.J., Glass, K., Cheng, A.C., McCaw, J.M. and McVernon, J., 2020. Coronavirus disease model to inform transmission-reducing measures and health system preparedness, Australia. Emerging infectious diseases, 26(12), p.2844."
+  },
+  {
+    "objectID": "staff/ivo-mueller.html",
+    "href": "staff/ivo-mueller.html",
+    "title": "Ivo Mueller",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     More\n  \n\n  \n  \nProfessor Ivo Mueller is a malaria epidemiologist, who is the Co-Division Head of the Population Health and Immunity Division at the WEHI. His research centres on field-based studies of host-vector-parasite interactions, burden and transmission of different Plasmodium species, the treatment and prevention of malaria as well as in-depth studies of natural acquisition of immunity, host genetic modification of malaria risk and the effect of parasite diversity on the host response to malarial infections. A special focus of his work is on the biology, treatment, control and elimination of P. vivax malaria.\nMore recently his laboratory has leveraged their experience from malaria serology to develop novel approaches to COVID-19 sero-surveillance and are studying the acquisition and maintenance of immunity to SARS-CoV-2 infections. In parallel, they are supporting health authorities in the Pacific with planning for and managing the COVID-19 pandemic by modelling different SARS-CoV-2 transmission scenarios and development of analytical tools to monitor the local progression of the pandemic.\n\n\n\n\nRelated Projects\n\n\nRelated publications\n\nFadilah, I., Djaafara, B.A., Lestari, K.D., Fajariyani, S.B., Sunandar, E., Makamur, B.G., Wopari, B., Mabui, S., Ekawati, L.L., Sagara, R. and Lina, R.N., 2022. Quantifying spatial heterogeneity of malaria in the endemic Papua region of Indonesia: Analysis of epidemiological surveillance data. The Lancet Regional Health-Southeast Asia, 5, p.100051."
+  },
+  {
+    "objectID": "staff/jodie-mcvernon.html",
+    "href": "staff/jodie-mcvernon.html",
+    "title": "Jodie McVernon",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     LinkedIn\n  \n\n  \n  \n\nDirector, SPARK and SPECTRUM\n\n\nDirector of Doherty Epidemiology, Doherty Institute, University of Melbourne, Australia\nJodie McVernon is a Monash University Medical Graduate with subspecialty training in Paediatrics, Public Health and Vaccinology. She has extensive expertise in clinical vaccine trials, epidemiologic studies and mathematical modelling of infectious diseases, gained at the University of Oxford, Health Protection Agency London and University of Melbourne.\nJodie is currently Professor and Director of Doherty Epidemiology at the Peter Doherty Institute for Infection and Immunity. Her research group uses a range of biostatistical and epidemiological methods including modelling to synthesise insights gained from basic biology, epidemiological data and sociological research. These outputs advance understanding of the observed epidemiology of infectious diseases and inform predictions of the likely success of interventions to limit transmission and burden in different populations.\nFor the past 18 years she has been building capacity in infectious diseases modelling in Australia and the Asia Pacific Region to support immunization and pandemic preparedness strategies. She has led nationally distributed networks of modellers informing responses to the 2009 H1N1 influenza pandemic and the current COVID-19 pandemic. She contributes to national and global preparedness and response policy through consultancies, direct advice and membership of groups including the Australian Health Protection Principal Committee and the WHO Strategic and Technical Advisory Group on Infection Hazards of Pandemic and Epidemic potential.\n\n\n\n\n\nRelated Projects\n\n\nRelated publications\n\nGolding, N., Price, D.J., Ryan, G., McVernon, J., McCaw, J.M. and Shearer, F.M., 2023. A modelling approach to estimate the transmissibility of SARS-CoV-2 during periods of high, low, and zero case incidence. eLife, 12, p.e78089.\nFadilah, I., Djaafara, B.A., Lestari, K.D., Fajariyani, S.B., Sunandar, E., Makamur, B.G., Wopari, B., Mabui, S., Ekawati, L.L., Sagara, R. and Lina, R.N., 2022. Quantifying spatial heterogeneity of malaria in the endemic Papua region of Indonesia: Analysis of epidemiological surveillance data. The Lancet Regional Health-Southeast Asia, 5, p.100051.\nTellioglu N, Chisholm RH, McVernon J, Geard N, Campbell PT (2022) The efficacy of sampling strategies for estimating scabies prevalence. PLOS Neglected Tropical Diseases 16(6): e0010456. https://doi.org/10.1371/journal.pntd.0010456\nZachreson, C., Shearer, F.M., Price, D.J., Lydeamore, M.J., McVernon, J., McCaw, J. and Geard, N., 2022. COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. Science Advances, 8(14), p.eabm3624.\nBaker, C.M., Campbell, P.T., Chades, I., Dean, A.J., Hester, S.M., Holden, M.H., McCaw, J.M., McVernon, J., Moss, R., Shearer, F.M. and Possingham, H.P., 2022. From climate change to pandemics: decision science can help scientists have impact. Frontiers in Ecology and Evolution, 10.\nHui, B.B., Brown, D., Chisholm, R.H., Geard, N., McVernon, J. and Regan, D.G., 2021. Modelling testing and response strategies for COVID-19 outbreaks in remote Australian Aboriginal communities. BMC Infectious Diseases, 21, pp.1-12.\nMoss, R., Wood, J., Brown, D., Shearer, F.M., Black, A.J., Glass, K., Cheng, A.C., McCaw, J.M. and McVernon, J., 2020. Coronavirus disease model to inform transmission-reducing measures and health system preparedness, Australia. Emerging infectious diseases, 26(12), p.2844.\nChisholm, R.H., Crammond, B., Wu, Y., Bowen, A.C., Campbell, P.T., Tong, S.Y., McVernon, J. and Geard, N., 2020. A model of population dynamics with complex household structure and mobility: implications for transmission and control of communicable diseases. PeerJ, 8, p.e10203.\nPrice, D.J., Shearer, F.M., Meehan, M.T., McBryde, E., Moss, R., Golding, N., Conway, E.J., Dawson, P., Cromer, D., Wood, J. and Abbott, S., 2020. Early analysis of the Australian COVID-19 epidemic. Elife, 9, p.e58785."
+  },
+  {
+    "objectID": "staff/barbara-mcpake.html",
+    "href": "staff/barbara-mcpake.html",
+    "title": "Barbara McPake",
+    "section": "",
+    "text": "Email\n  \n\n  \n  \nProfessor Barbara McPake is currently the Director of the Nossal Institute for Global Health, University of Melbourne. Barbara was the Director at the Institute for International Health and Development, Queen Margaret University, Edinburgh until 2014, and held posts at the London School of Hygiene and Tropical Medicine including as Head of the Health Policy Unit and Director of the Health Systems Knowledge Program, until 2005. She was one of two Research Directors of ‘REBUILD’ a UK Department for International Development funded Research Programme Consortium on health systems development. Barbara has extensive research degree supervision and other postgraduate teaching experience and extensive international experience in health systems research and policy analysis and advice to UN agencies and low and middle income country governments.\n\n\n\n\nRelated Projects\n\n\nRelated publications"
+  },
+  {
+    "objectID": "staff/dean-paini.html",
+    "href": "staff/dean-paini.html",
+    "title": "Dean Paini",
+    "section": "",
+    "text": "Email\n  \n  \n    \n     More\n  \n\n  \n  \nDr Dean Paini leads an interdisciplinary consortium (DiNeMo - https://research.csiro.au/dss/dinemo-disease-networks-mobility/) focused on modelling human movement and the spread of infectious diseases. DiNeMo is a multi-award winning, multi-institution team of researchers with a range of experience, which includes infectious diseases, statistics, computer science, applied mathematics, AI, ecology, and operations research. Such a diverse wealth of expertise and experience enables and facilitates novel solutions to the many data and epidemiological questions that emerge.\n\n\n\n\nRelated Projects\n\n\nRelated publications"
   }
 ]

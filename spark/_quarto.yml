@@ -3,21 +3,24 @@ project:
   output-dir: ../_site/spark
 
 website:
-  title: "SPARK"
+  title: "Strengthening preparedness in the Asia-Pacific region through knowledge"
   navbar:
     right:
       - text: "Home"
         href: index.html
       - text: "People"
         href: people.html
+      - text: "Publications"
+        href: publications.html
       - text: "Other Consortia"
         menu:
           - text: "SPECTRUM"
             href: ../spectrum/index.html
           - text: "PRISM<sup>2</sup>"
             href: https://www.prism.edu.au
-    background: "#F05662"
-    logo: ../images/logo_spark.png
+    foreground: "#9f1f63"
+    background: "#FFFFFF"
+    logo: images/logo_spark.png
   favicon: images/favicon.png
         
         
@@ -25,5 +28,5 @@ website:
 format:
   html:
     theme: cosmo
-    css: [theme.css, custom_scss.scss]
+    css: [style_spark.css, custom_scss.scss]
     toc: true

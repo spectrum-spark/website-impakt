@@ -96,10 +96,6 @@ d-appendix {
   align-self: flex-end;
 }
 
-h1 {
-  color: #F05662
-}
-
 /* Sets the width for the ID pages to be roughly the same as standard content */
 .my-5 {
   width: 66%;
@@ -158,5 +154,19 @@ h1 {
 }
 
 .navbar-dark {
-  background-color: #9f1f63;
+  background-color: #FFFFFF;
+}
+
+.navbar-brand img {
+  max-height: fit-content !important;
+}
+
+.navbar {
+  border-style: none none solid none;
+  border-color: #9f1f63;
+}
+
+a {
+  text-decoration-style: dotted;
+  color: inherit;
 }

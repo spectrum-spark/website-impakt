@@ -1,9 +1,12 @@
 ---
-title: "SPARK: Strengthening preparedness in the Asia-Pacific region through knowlege"
+title: "SPARK"
 toc: false
 format:
     html:
-        css: style_spark.css
+        page-layout: full
+title-block-banner: images/home_bg.png
+description: SPARK is aimed at strengthening preparedness in the Asia-Pacific region through knowledge, under the ASEAN-Pacific Infectious Disease and Response program (APIDDaR). \n \n It uses quantitative methods and modelling to strengthen regional capacity, develop innovative tools for adaptive decision making to inform disease prevention control and elimination. <br /> <b>SPARK is funded by, and works in collaboration with DFAT.</b>
+title-block-banner-color: "#FFFFFF"
 ---
 
 
