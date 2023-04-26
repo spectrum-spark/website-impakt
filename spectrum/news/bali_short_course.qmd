@@ -1,0 +1,11 @@
+---
+title: "Short Course in Mathematical Modelling - Bali 2023"
+author: "Michael Lydeamore"
+date: '2023-04-01'
+categories: ['training']
+description: 'Test training post'
+---
+
+# Test content 
+
+Lorem impsum content wow

@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: ../_site/spectrum
+  pre-render: cp -R ../spark/news news
 
 website:
   title: "Supporting Participatory Evidence generation to Control Transmissible diseases in our Region Using Modelling"
@@ -14,6 +15,8 @@ website:
         href: key_collaborators.html
       - text: "Publications"
         href: publications.html
+      - text: "News and Events"
+        href: news.html
       - text: "Other Consortia"
         menu:
           - text: "SPARK"

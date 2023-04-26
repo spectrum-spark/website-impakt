@@ -170,3 +170,7 @@ a {
   text-decoration-style: dotted;
   color: inherit;
 }
+
+.nav-item {
+  white-space: nowrap;
+}

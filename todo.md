@@ -1,18 +1,18 @@
 * Events page (?blog)
     * Shared? readLines writeLines? 
 * Projects page
-    * Make google sheet
+    * Make google sheet (DONE)
     * Project name; related-staff; start-date; end-date
 * Fix key collaborators page (HALF DONE)
 * Key collaborators: Participating institutions, Domestic Collaborators, International Collaborators
 * More collaborators logos
 * Fix white logos
-* Line up people descriptions
-* Remove anchored
-* Link into new tab
+* Line up people descriptions (DONE)
+* Remove anchored (DONE)
+* Link into new tab (DONE)
 * Add spark Fellow category
 * Record video walkthrough of webpage
-* Fix search
+* Fix search (DONE - ONLY ON WEB NOT IN DEV)
 * Add email address somewhere.
 * Move the logo text to be actually in line
 * Readability of SPARK header
