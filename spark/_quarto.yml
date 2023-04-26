@@ -3,7 +3,7 @@ project:
   output-dir: ../_site/spark
 
 website:
-  title: "Strengthening preparedness in the Asia-Pacific region through knowledge"
+  title: "Strengthening Preparedness in the Asia-Pacific Region through Knowledge"
   navbar:
     right:
       - text: "Home"
@@ -12,6 +12,8 @@ website:
         href: people.html
       - text: "Publications"
         href: publications.html
+      - text: "News & Events"
+        href: news.html
       - text: "Other Consortia"
         menu:
           - text: "SPECTRUM"

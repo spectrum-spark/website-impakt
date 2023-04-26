@@ -151,6 +151,9 @@ ul.task-list{list-style: none;}
 </section>
 <section id="related-publications" class="level1">
 <h1>Related publications</h1>
+<ul>
+<li><a href="https://www.doherty.edu.au/uploads/content_doc/Synthesis_DohertyModelling_FinalReport__NatCab05Nov.pdf">Doherty Institute, 2021. Doherty Modelling – Final Report to National Cabinet, 5 November. Available at https://www.doherty.edu.au/uploads/content_doc/Synthesis_DohertyModelling_FinalReport__NatCab05Nov.pdf (Accessed 24 April 2023)</a></li>
+</ul>
 
 
 
@@ -245,6 +248,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.spectrum\.edu\.au\/custom/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

@@ -4,6 +4,8 @@ image: "../images/staff/michael-lydeamore.png"
 format:
   html:
     page-layout: full
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.spectrum\.edu\.au\/custom'
 about:
   template: trestles
   image-shape: round

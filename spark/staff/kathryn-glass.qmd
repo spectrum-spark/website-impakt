@@ -4,6 +4,8 @@ image: "../images/staff/kathryn-glass.jpg"
 format:
   html:
     page-layout: full
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom'
 about:
     id: about-block
     template: trestles

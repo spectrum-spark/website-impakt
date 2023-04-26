@@ -63,7 +63,7 @@ generate_image_link <- function(image_path, url) {
 
 ```
 
-# Domestic Collaborators
+## Domestic Collaborators
 
 ```{r key-collaborators, results='asis'}
 cat(":::: boxes \n")

@@ -26,7 +26,7 @@ library(tools)
 library(DT)
 ```
 
-This page shows all the publications produced as part of this consortia. The list is searchable, and you can click the globe on any row to be taken to the journal webpage for the full paper.
+This page shows all the publications produced as part of these consortia. The list is searchable, and you can click the globe on any row to be taken to the journal webpage for the full paper.
 
 ```{r list-publications}
 #| results: 'asis'

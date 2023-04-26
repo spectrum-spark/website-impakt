@@ -26,7 +26,7 @@ library(tools)
 library(DT)
 ```
 
-This page shows all the publications produced as part of this consortia. The list is searchable, and you can click the globe on any row to be taken to the journal webpage for the full paper.
+This page shows all the publications produced as part of these consortia. The list is searchable, and you can click the globe on any row to be taken to the journal webpage for the full paper.
 
 ```{r list-publications}
 #| results: 'asis'
@@ -39,27 +39,26 @@ svg_string <- '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fi
 
 publications_table <- lapply(publication_list, function(pub) {
     data.frame(
-        
         Date = pub$date,
-        Link = glue::glue("<a href={pub$link}>{svg_string}</a>"),
+        Link = glue::glue("<a href={pub$link} target='_blank'>{svg_string}</a>"),
         Citation = markdown::mark_html(
-            text = pub$citation, 
+            text = pub$citation,
             template = FALSE
         ) |>
-            stringr::str_replace('(\r\n|\n).*', '') |>
-            stringr::str_replace_all('<p>|</p>', '')
+            stringr::str_replace("(\r\n|\n).*", "") |>
+            stringr::str_replace_all("<p>|</p>", "")
     )
 }) |> bind_rows()
 
 DT::datatable(
-    publications_table, 
-    rownames = FALSE, 
+    publications_table,
+    rownames = FALSE,
     escape = FALSE,
     colnames = c("Date", "Link", "Citation"),
     options = list(
         columnDefs = list(
-            list(width = '100px', targets = 0),
-            list(className = "dt-center", targets = c(0,1)),
+            list(width = "100px", targets = 0),
+            list(className = "dt-center", targets = c(0, 1)),
             list(className = "vert-align", targets = 2)
         )
     )

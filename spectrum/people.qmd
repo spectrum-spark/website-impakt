@@ -1,5 +1,8 @@
 ---
 title: "People"
+format:
+    html:
+        anchor-sections: false
 ---
 
 ```{css, echo=FALSE}
@@ -35,6 +38,11 @@ title: "People"
 
 h3 {
     text-align: center;
+    min-height: 2.5em;
+}
+
+.anchored {
+    display: hidden;
 }
 ```
 

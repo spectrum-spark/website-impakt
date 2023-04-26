@@ -1,5 +1,8 @@
 ---
 title: "People"
+format:
+    html:
+        anchor-sections: false
 ---
 
 ```{css, echo=FALSE}
@@ -35,6 +38,7 @@ title: "People"
 
 h3 {
     text-align: center;
+    min-height: 2.5em;
 }
 ```
 
@@ -65,7 +69,7 @@ cat("::::")
 ```{r, results='asis'}
 cat(":::: boxes \n")
 for (staff_member in staff_list) {
-    if (staff_member$staff_type == "researcher" | staff_member$staff_type == "researcher-support") {
+    if (staff_member$staff_type == "researcher" | staff_member$staff_type == "research-support") {
         fileext <- flist[grepl(staff_member$id, flist)] %>% file_ext()
         condensr::generate_markdown_for_member(staff_member, extension = fileext)
     }
