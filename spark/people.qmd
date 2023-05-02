@@ -64,6 +64,19 @@ for (staff_member in staff_list) {
 cat("::::")
 ```
 
+## SPARK Fellows
+
+```{r, results='asis'}
+cat(":::: boxes \n")
+for (staff_member in staff_list) {
+    if (staff_member$staff_type == "fellow") {
+       fileext <- flist[grepl(staff_member$id, flist)] %>% file_ext()
+        condensr::generate_markdown_for_member(staff_member, extension = fileext)
+    }
+}
+cat("::::")
+```
+
 ## Research and Support Staff
 
 ```{r, results='asis'}
@@ -83,7 +96,8 @@ cat("::::")
 cat(":::: boxes \n")
 for (staff_member in staff_list) {
     if (staff_member$staff_type == "student") {
-        condensr::generate_markdown_for_member(staff_member)
+        fileext <- flist[grepl(staff_member$id, flist)] %>% file_ext()
+        condensr::generate_markdown_for_member(staff_member, extension = fileext)
     }
 }
 cat("::::")

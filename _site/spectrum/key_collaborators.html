@@ -84,11 +84,21 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link active" href="./key_collaborators.html" aria-current="page">Partners</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html">Publications</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./publications.html#publications">
+ <span class="dropdown-text">Publications</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./publications.html#video">
+ <span class="dropdown-text">Video</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./news.html">News &amp; Events</a>
+    <a class="nav-link" href="./news.html">News and Events</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-consortia" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Consortia</a>
@@ -118,7 +128,12 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#domestic-collaborators" id="toc-domestic-collaborators" class="nav-link active" data-scroll-target="#domestic-collaborators">Domestic Collaborators</a></li>
+  <li><a href="#participating-instititutions" id="toc-participating-instititutions" class="nav-link active" data-scroll-target="#participating-instititutions">Participating Instititutions</a></li>
+  <li><a href="#collaborators" id="toc-collaborators" class="nav-link" data-scroll-target="#collaborators">Collaborators</a>
+  <ul class="collapse">
+  <li><a href="#domestic-institutions" id="toc-domestic-institutions" class="nav-link" data-scroll-target="#domestic-institutions">Domestic Institutions</a></li>
+  <li><a href="#international-institutions" id="toc-international-institutions" class="nav-link" data-scroll-target="#international-institutions">International Institutions</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -187,8 +202,16 @@ h3 {
 }
 </style>
 </div>
-<section id="domestic-collaborators" class="level2">
-<h2 class="anchored" data-anchor-id="domestic-collaborators">Domestic Collaborators</h2>
+<section id="participating-instititutions" class="level2">
+<h2 class="anchored" data-anchor-id="participating-instititutions">Participating Instititutions</h2>
+</section>
+<section id="collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="collaborators">Collaborators</h2>
+<section id="domestic-institutions" class="level3">
+<h3 class="anchored" data-anchor-id="domestic-institutions">Domestic Institutions</h3>
+</section>
+<section id="international-institutions" class="level3">
+<h3 class="anchored" data-anchor-id="international-institutions">International Institutions</h3>
 <div class="boxes">
 <div class="col">
 <p><a href="https://www.mcri.edu.au/"><img src="images/collaborators/logo_mcri.png"> </a></p>
@@ -250,6 +273,7 @@ h3 {
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -351,6 +375,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">For more information or to report issues, please contact <a href="mailto:spectrum-spark@unimelb.edu.au">the consortia project inbox</a>.</div>   
+    <div class="nav-footer-right">SPECTRUM is funded by the National Health and Medical Research Council (NHMRC).</div>
+  </div>
+</footer>
 
 
 

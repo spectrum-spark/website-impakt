@@ -83,11 +83,21 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link" href="../key_collaborators.html">Partners</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../publications.html">Publications</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../publications.html#publications">
+ <span class="dropdown-text">Publications</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../publications.html#video">
+ <span class="dropdown-text">Video</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../news.html">News &amp; Events</a>
+    <a class="nav-link" href="../news.html">News and Events</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-consortia" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Consortia</a>
@@ -144,8 +154,14 @@ ul.task-list{list-style: none;}
 </div>
   </div>
   <div class="about-contents"><div id="about-block">
+<section id="senior-lecturer" class="level3">
+<h3 data-anchor-id="senior-lecturer">Senior Lecturer</h3>
+</section>
+<section id="university-of-melbourne" class="level3">
+<h3 data-anchor-id="university-of-melbourne">University of Melbourne</h3>
 <p>Nic Geard uses computational models to investigate the transmission and control of infectious diseases such as influenza, group A Streptococcus, and COVID-19. He is particularly interested in how rich computational models can capture the influence of demographic, behavioural and pathogen heterogeneity on the spread of diseases, and the implications this heterogeneity has for effective control strategies.</p>
 <p>Nic is a CI on SPECTRUM. He is Director of the Melbourne Data Analytics Platform [https://mdap.unimelb.edu.au/], a team of research data specialists enabling data-intensive and collaborative research across The University of Melbourne. More broadly, he is interested in the application of computational simulation models to the study of complex biological, social and artificial systems. Past areas of research interest have included the structure and dynamics of gene regulatory networks, the interplay between developmental and evolutionary processes, and the co-evolution of state and topology in dynamic networks.</p>
+</section>
 </div></div>
 </div>
 
@@ -268,6 +284,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">For more information or to report issues, please contact <a href="mailto:spectrum-spark@unimelb.edu.au">the consortia project inbox</a>.</div>   
+    <div class="nav-footer-right">SPECTRUM is funded by the National Health and Medical Research Council (NHMRC).</div>
+  </div>
+</footer>
 
 
 

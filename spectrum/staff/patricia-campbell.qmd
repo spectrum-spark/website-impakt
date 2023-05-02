@@ -2,7 +2,7 @@
 params:
     staff_id: "patricia-campbell"
     staff_list: "`r source('../load_data.R')`"
-title: "`r staff_list[[params$staff_id]][['name']]`"
+title: "Patricia Campbell"
 image: "../images/staff/patricia-campbell.jpg"
 format:
   html:
@@ -45,7 +45,7 @@ about:
 
 staff_member <- staff_list[[params$staff_id]]
 
-cat(pull(staff_member[["bio"]]))
+cat(staff_member[["bio"]])
 
 ```
 

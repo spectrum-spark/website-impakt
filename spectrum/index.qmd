@@ -39,4 +39,4 @@ SPECTRUM CRE focuses on four key themes in infectious disease prevention and con
 
 This will be achieved using The Structured Decision-Making Framework: 
 
-![](images/decision_making_process.png)
+![](images/decision_making_process.png){width=50% fig-align="center"}

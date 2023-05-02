@@ -1,10 +1,14 @@
 project:
   type: website
   output-dir: ../_site/spectrum
-  pre-render: cp -R ../spark/news news
+  pre-render: 
+    - cp -a ../news/. ./news/
+    - quarto run ../update_data.R
 
 website:
-  title: "Supporting Participatory Evidence generation to Control Transmissible diseases in our Region Using Modelling"
+  title: |
+    Supporting Participatory Evidence generation to Control
+    Transmissible diseases in our Region Using Modelling
   navbar:
     right:
       - text: "Home"
@@ -13,8 +17,14 @@ website:
         href: people.html
       - text: "Partners"
         href: key_collaborators.html
-      - text: "Publications"
-        href: publications.html
+      - text: "Resources"
+        menu:
+          - text: "Publications"
+            href: "publications.html#publications"
+          - text: "Video & Media"
+            href: "publications.html#video"
+          - text: "Articles"
+            href: "publications.html#articles"
       - text: "News and Events"
         href: news.html
       - text: "Other Consortia"
@@ -27,8 +37,13 @@ website:
     background: "#FFFFFF"
     logo: ../images/logo_spectrum.png
   favicon: images/favicon.png
-  body-footer: |
-    For more information or to report issues, please contact <mailto:spectrum-spark@unimelb.edu.au>
+  page-footer:
+    left: |
+      For more information or to report issues, please contact <a href='mailto:spectrum-spark@unimelb.edu.au'>the consortia project inbox</a>.
+    right: |
+      SPECTRUM is funded by the National Health and Medical Research Council (NHMRC).
+    background: "#F05662"
+    foreground: "#FFFFFF"
 
 format:
   html:

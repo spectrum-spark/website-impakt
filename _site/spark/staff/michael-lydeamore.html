@@ -149,7 +149,13 @@ ul.task-list{list-style: none;}
 </div>
   </div>
   <div class="about-contents"><div id="about-block">
+<section id="lecturer-business-analytics" class="level3">
+<h3 data-anchor-id="lecturer-business-analytics">Lecturer, Business Analytics</h3>
+</section>
+<section id="department-of-econometrics-and-business-statistics-monash-university" class="level3">
+<h3 data-anchor-id="department-of-econometrics-and-business-statistics-monash-university">Department of Econometrics and Business Statistics, Monash University</h3>
 <p>Dr Lydeamore is an infectious disease modeller. His current research focuses on the dynamics of COVID-19, and quantifying the spread an designing control strategies for the spread of antimicrobial resistance in Victorian hospitals, at Monash University and The Alfred Central Clinical School. He acquired a PhD from The University of Melbourne in 2019 focusing on modelling the spread and control of skin infections. He has previously modelled antiviral allocation schemes in an influenza pandemic.</p>
+</section>
 </div></div>
 </div>
 
@@ -160,6 +166,7 @@ ul.task-list{list-style: none;}
 <h1>Related Publications</h1>
 <ul>
 <li><a href="https://doi.org/10.1126/sciadv.abm3624">Zachreson, C., Shearer, F.M., Price, D.J., Lydeamore, M.J., McVernon, J., McCaw, J. and Geard, N., 2022. COVID-19 in low-tolerance border quarantine systems: Impact of the Delta variant of SARS-CoV-2. <em>Science Advances, 8</em>(14), p.eabm3624.</a></li>
+<li><a href="https://www.doherty.edu.au/uploads/content_doc/Synthesis_DohertyModelling_FinalReport__NatCab05Nov.pdf">Doherty Institute, 2021. Doherty Modelling – Final Report to National Cabinet, 5 November. Available at https://www.doherty.edu.au/uploads/content_doc/Synthesis_DohertyModelling_FinalReport__NatCab05Nov.pdf (Accessed 24 April 2023)</a></li>
 </ul>
 
 
@@ -255,9 +262,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">For more information or to report issues, please contact <a href="mailto:spectrum-spark@unimelb.edu.au">the consortia project inbox</a>.</div>   
+    <div class="nav-footer-right">SPARK is funded by the Australian Department of Foreign Affairs and Trade (DFAT)</div>
+  </div>
+</footer>
 
 
 

@@ -2,25 +2,31 @@ library(condensr)
 library(dplyr)
 library(googlesheets4)
 library(tidyr)
+library(readr)
 
-staff_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1sVQZRazo_zGcQkgP_WhMsIEhnye1Cr4l5b8Tqi8pVq8/edit#gid=303417326") |>
-    filter(!is.na(id)) |>
-    separate_longer_delim(c(staff_type, consortia), delim = ",") |>
-    filter(consortia == "spark")
+staff_csv <- read_csv(here::here("spark/staff_list.csv"))
 
 staff_list <- lapply(1:nrow(staff_csv), function(i) {
     member <- staff_member(
         id = staff_csv[i, "id"] %>% pull(),
         name = staff_csv[i, "name"] %>% pull(),
-        description = paste(
-            staff_csv[i, c("role_in_org", "organisation")],
-            collapse = "\n\n"
+        description = if_else(
+            is.na(staff_csv[i, "role_in_ss"] %>% pull()),
+            stringr::str_to_sentence(staff_csv[i, "staff_type"] %>% pull()),
+            staff_csv[i, "role_in_ss"] %>% pull()
         ),
         external_link = staff_csv[i, "external_link"] %>% pull(),
         internal_link = staff_csv[i, "internal_link"] %>% pull()
     )
     member[["staff_type"]] <- staff_csv[i, "staff_type"]
-    member[["bio"]] <- staff_csv[i, "bio"]
+    member[["bio"]] <- paste(
+        paste("###", staff_csv[i, c("role_in_org", "organisation")], collapse = "\n\n"),
+        "\n\n",
+        staff_csv[i, "bio"],
+        collapse = "\n\n"
+    )
+    member[["email"]] <- staff_csv[i, "email"]
+    member[["consortia"]] <- staff_csv[i, "consortia"]
 
     return(member)
 })
@@ -30,7 +36,7 @@ project_list <- list()
 
 
 
-publication_csv <- read_sheet("https://docs.google.com/spreadsheets/d/1VIFfbKhJBtZJQX91CAceiBEJSeMs9CbpUe_qclfS4GM/edit#gid=0")
+publication_csv <- read_csv(here::here("spark/publication_list.csv"))
 
 publication_list <- lapply(1:nrow(publication_csv), function(i) {
     publication(

@@ -1,11 +1,14 @@
 ---
+params:
+    staff_id: "nick-golding"
+    staff_list: "`r source('../load_data.R')`"
 title: "Nick Golding"
 image: "../images/staff/nick-golding.jpg"
 format:
   html:
     page-layout: full
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)\/\/www\.spectrum\.edu\.au\/custom'
+    link-external-filter: '^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom'
 about:
     id: about-block
     template: trestles
@@ -13,26 +16,27 @@ about:
     links:
       - icon: envelope
         text: "Email"
-        href: "mailto:j.mcvernon@unimelb.edu.au"
-      - icon: linkedin
-        text: "LinkedIn"
-        href: "https://au.linked.in.com/in/jodie-mcvernon-5281b764"
+        href: "mailto:Nick.Golding@telethonkids.org.au"
+      - icon: globe
+        text: "More"
+        href: "https://staffportal.curtin.edu.au/staff/profile/view/nick-golding-fea4f81a/"
 ---
    
 ```{r setup}
 #| echo: false
 #| warning: false
 #| message: false
-source("../load_data.R")
+# source("../load_data.R")
 ```
 ::: {#about-block}
-
 
 ```{r bio}
 #| results: asis
 #| echo: false
-staff_member <- staff_list[["nick-golding"]]
-cat(pull(staff_member[["bio"]]))
+
+staff_member <- staff_list[[params$staff_id]]
+
+cat(staff_member[["bio"]])
 
 ```
 

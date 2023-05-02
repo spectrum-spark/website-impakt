@@ -66,9 +66,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -144,7 +144,7 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="grants">grants <span class="quarto-category-count">(1)</span></div><div class="category" data-category="training">training <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -170,60 +170,7 @@ ul.task-list{list-style: none;}
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="grants" data-listing-date-sort="1680267600000" data-listing-file-modified-sort="1681799702974" data-listing-reading-time-sort="0.02">
-<a href="./news/bali_short_course_test.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Short Course in Mathematical Modelling - Bali 2023
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('grants'); return false;">
-grants
-</div>
-</div>
-<div class="card-text listing-description">
-Test training post
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Michael Lydeamore
-</div>
-<div class="listing-date">
-Apr 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="training" data-listing-date-sort="1680267600000" data-listing-file-modified-sort="1681799610494" data-listing-reading-time-sort="0.02">
-<a href="./news/bali_short_course.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Short Course in Mathematical Modelling - Bali 2023
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('training'); return false;">
-training
-</div>
-</div>
-<div class="card-text listing-description">
-Test training post
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Michael Lydeamore
-</div>
-<div class="listing-date">
-Apr 1, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
+
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -327,6 +274,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">For more information or to report issues, please contact <a href="mailto:spectrum-spark@unimelb.edu.au">the consortia project inbox</a>.</div>   
+    <div class="nav-footer-right">SPARK is funded by the Australian Department of Foreign Affairs and Trade (DFAT)</div>
+  </div>
+</footer>
 
 
 

@@ -39,7 +39,7 @@ source("../load_data.R")
 #| results: asis
 #| echo: false
 staff_member <- staff_list[["michael-lydeamore"]]
-cat(pull(staff_member[["bio"]]))
+cat(staff_member[["bio"]])
 
 ```
 

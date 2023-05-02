@@ -1,7 +1,10 @@
 ---
-title: ""
+title: "McVernon Umbrella Corporation"
 sidebar: false
 toc: false
+format:
+    html:
+        page-layout: full
 ---
 
 ```{r setup, include=FALSE}
@@ -17,28 +20,86 @@ knitr::opts_chunk$set(echo = FALSE, cache = FALSE)
         }
     }
 }
+
+img {
+    float: left;
+    padding-right: 30px;
+    max-width: 190px !important;
+    
+}
+
+.consortia-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid lightgray;
+    height: 120px;
+    padding-left: 15px;
+}
+
+.consortia-item {
+    align-self: center;
+    flex-grow: 1;
+}
+
+p {
+    margin-top: revert !important;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
 </style>
 
-# Currently active consortia
+Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.
 
-::: {.boxes}
+For more information such as governance, people and projects, and specific publications, select from the individual consortia below.
 
-<div class='col' onclick="location.href='spectrum/index.html';"; style='cursor: pointer;'>
-<img src="images/logo_spectrum.png"></img>
-</div>
+## Current consortia
 
-<div class='col' onclick="location.href='spark/index.html';"; style='cursor: pointer;'>
-<img src="images/logo_spark.png"></img>
-</div>
+<a href='./spectrum/index.html'>
 
+::: {.consortia-description}
+![](images/logo_spectrum.png){.consortia-item}
+
+:::: {.consortia-item}
+
+**S**upporting **P**articipatory **E**vidence generation to **C**ontrol **T**ransmissible diseases in our **R**egion **U**sing **M**odelling
+
+::::
 :::
 
-# Past consortia
+</a>
 
-::: {.boxes}
+<a href='./spark/index.html'>
 
-<div class='col' onclick="window.open('https\:\/\/www.prism.edu.au');"; style='cursor: pointer;'>
-<img src="images/logo_prism.png"></img>
-</div>
+::: {.consortia-description}
+![](images/logo_spark.png){.consortia-item}
 
+:::: {.consortia-item}
+
+**S**trengthening **P**reparedness in the **A**sia-**P**acific **R**egion through **K**nowledge
+
+::::
 :::
+</a>
+
+## Past consortia
+
+<a href="https://www.prism.edu.au/">
+
+::: {.consortia-description}
+
+![](images/logo_prism.png)
+
+:::: {.consortia-item}
+
+**P**olicy **R**elevant **I**nfectious disease **S**imulation and **M**athematical **M**odelling
+
+::::
+:::
+</a>

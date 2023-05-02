@@ -83,11 +83,21 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link" href="../key_collaborators.html">Partners</a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../publications.html">Publications</a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../publications.html#publications">
+ <span class="dropdown-text">Publications</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../publications.html#video">
+ <span class="dropdown-text">Video</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../news.html">News &amp; Events</a>
+    <a class="nav-link" href="../news.html">News and Events</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-other-consortia" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Consortia</a>
@@ -133,19 +143,25 @@ ul.task-list{list-style: none;}
   </div>
 </header>
     <div class="about-links">
-  <a href="mailto:j.mcvernon@unimelb.edu.au" class="about-link">
+  <a href="mailto:Nick.Golding@telethonkids.org.au" class="about-link">
     <i class="bi bi-envelope"></i>
      <span class="about-link-text">Email</span>
   </a>
-  <a href="https://au.linked.in.com/in/jodie-mcvernon-5281b764" class="about-link">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
+  <a href="https://staffportal.curtin.edu.au/staff/profile/view/nick-golding-fea4f81a/" class="about-link">
+    <i class="bi bi-globe"></i>
+     <span class="about-link-text">More</span>
   </a>
 </div>
   </div>
   <div class="about-contents"><div id="about-block">
+<section id="professor" class="level3">
+<h3 data-anchor-id="professor">Professor</h3>
+</section>
+<section id="curtin-university-and-telethon-kids-institute" class="level3">
+<h3 data-anchor-id="curtin-university-and-telethon-kids-institute">Curtin University and Telethon Kids Institute</h3>
 <p>Professor Nick Golding is an infectious disease modeller with a focus on globally-important pathogens. His work combines mathematical and statistical modelling, ecology, and public health. Since completing a PhD on modelling mosquito-borne diseases at the University of Oxford, he has collaborated with epidemiologists from around the world developing models and maps of the risk posed by some of the world’s most important and neglected diseases – including malaria, Dengue fever, Chikungunya, and Ebola.</p>
 <p>After moving to the University of Melbourne in 2016, Professor Golding has worked closely with ecologists both on modelling methods and on urgent health issues like Melbourne’s Buruli ulcer outbreak – where risk to humans depends on the ecology of mosquitos and possums. In 2020 Professor Golding joined the Malaria Atlas Project at Telethon Kids Institute as Director of Malaria Ecology. He is a member of the Australian national modelling team, advising national and state governments on their response to COVID-19 throughout the pandemic.</p>
+</section>
 </div></div>
 </div>
 
@@ -254,7 +270,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.spectrum\.edu\.au\/custom/);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
@@ -270,6 +286,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">For more information or to report issues, please contact <a href="mailto:spectrum-spark@unimelb.edu.au">the consortia project inbox</a>.</div>   
+    <div class="nav-footer-right">SPECTRUM is funded by the National Health and Medical Research Council (NHMRC).</div>
+  </div>
+</footer>
 
 
 
