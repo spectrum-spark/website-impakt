@@ -27,6 +27,8 @@ website:
     background: "#FFFFFF"
     logo: ../images/logo_spectrum.png
   favicon: images/favicon.png
+  body-footer: |
+    For more information or to report issues, please contact <mailto:spectrum-spark@unimelb.edu.au>
 
 format:
   html:

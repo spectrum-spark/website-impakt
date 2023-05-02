@@ -21,6 +21,8 @@ staff_list <- lapply(1:nrow(staff_csv), function(i) {
     )
     member[["staff_type"]] <- staff_csv[i, "staff_type"]
     member[["bio"]] <- staff_csv[i, "bio"]
+    member[["email"]] <- staff_csv[i, "email"]
+    member[["consortia"]] <- staff_csv[i, "consortia"]
 
     return(member)
 })
@@ -45,4 +47,3 @@ publication_list <- lapply(1:nrow(publication_csv), function(i) {
 publication_list <- publication_list[
     order(sapply(publication_list, "[[", "date"), decreasing = TRUE)
 ]
-
