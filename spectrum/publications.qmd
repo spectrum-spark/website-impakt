@@ -6,6 +6,8 @@ format:
         page-layout: full
 ---
 
+SPECTRUM produces novel research and disseminates in a wide variety of forms, including publications, videos and media engagements and plain language articles. Here you can find information on all of the consortia's outputs.
+
 ```{css, echo=FALSE}
 .vert-align {
     margin: auto;

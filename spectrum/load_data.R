@@ -34,9 +34,22 @@ names(staff_list) <- staff_csv[, "id"] %>% pull()
 
 
 
-project_list <- list()
+project_csv <- read_csv(here::here("spectrum/project_list.csv"))
 
+project_list <- lapply(1:nrow(project_csv), function(i) {
+    proj <- project(
+        id = project_csv[i, "project_name"] %>% pull(),
+        name = project_csv[i, "project_name"] %>% pull(),
+        related_staff = stringr::str_trim(stringr::str_split(project_csv[i, "related_staff"], ",")[[1]]),
+        link = "../projects.html"
+    )
 
+    proj[["start_date"]] <- project_csv[i, "start_date"]
+    proj[["end_date"]] <- project_csv[i, "end_date"]
+    proj[["description"]] <- project_csv[i, "description"]
+
+    return(proj)
+})
 
 publication_csv <- read_csv(here::here("spectrum/publication_list.csv"))
 

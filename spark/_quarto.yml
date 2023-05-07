@@ -12,12 +12,18 @@ website:
         href: index.html
       - text: "People"
         href: people.html
-      - text: "Publications"
-        href: publications.html
+      - text: "Resources"
+        menu:
+          - text: "Publication"
+            href: publications.html
+          - text: "Projects"
+            href: projects.html
       - text: "News & Events"
         href: news.html
       - text: "Other Consortia"
         menu:
+          - text: "Home"
+            href: ../index.html
           - text: "SPECTRUM"
             href: ../spectrum/index.html
           - text: "PRISM<sup>2</sup>"
