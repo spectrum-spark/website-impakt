@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.For more information such as governance, people and projects, and specific publications, select from the individual consortia below.">
 
-<title>Modelling Consortia - McVernon Umbrella Corporation</title>
+<title>Modelling Consortia - IMPAKT: Infectious Diseases Modelling for Policy in Australia and Asia Pacific including Knowledge Translation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,6 +53,13 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
+<style>
+    .quarto-title-block .quarto-title-banner {
+      color: #FFFFFF;
+background-image: url(images/banner.png);
+background-size: cover;
+    }
+    </style>
 
 
 <link rel="stylesheet" href="theme.css">
@@ -61,28 +69,36 @@ ul.task-list{list-style: none;}
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">IMPAKT: Infectious Diseases <strong>M</strong>odelling for <strong>P</strong>olicy in <strong>A</strong>ustralia and Asia Pacific including <strong>K</strong>nowledge <strong>T</strong>ranslation</h1>
+                  <div>
+        <div class="description">
+          <p>Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.</p>
+          <p>For more information such as governance, people and projects, and specific publications, select from the individual consortia below.</p>
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">McVernon Umbrella Corporation</h1>
-</div>
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
 
 <style>
     @media (max-width: 200px) {
@@ -104,13 +120,12 @@ img {
 
 .consortia-description {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     min-height: 120px;
     border: 1px solid lightgray;
-    height: 120px;
+    min-height: 120px;
     padding-left: 15px;
 }
 
@@ -128,8 +143,6 @@ a, a:visited {
     text-decoration: none;
 }
 </style>
-<p>Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.</p>
-<p>For more information such as governance, people and projects, and specific publications, select from the individual consortia below.</p>
 <section id="current-consortia" class="level2">
 <h2 class="anchored" data-anchor-id="current-consortia">Current consortia</h2>
 <p><a href="./spectrum/index.html"></a></p><a href="./spectrum/index.html">
@@ -259,6 +272,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

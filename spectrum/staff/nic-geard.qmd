@@ -1,5 +1,5 @@
 ---
-title: "Nic Geard"
+title: "A/Prof. Nic Geard"
 image: "../images/staff/nic-geard.jpg"
 format:
   html:

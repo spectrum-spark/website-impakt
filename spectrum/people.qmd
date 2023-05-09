@@ -19,8 +19,8 @@ format:
 
 .personimg img {
     object-fit: contain;
-    max-height: 250px;
-    min-height: 250px;
+    max-height: 160px;
+    min-height: 160px;
 }
 
 .boxes {
@@ -29,7 +29,7 @@ format:
 
 .col {
     display: block;
-    max-height: 
+    text-align: center;
 }
 
 .col:hover {

@@ -2,7 +2,7 @@
 params:
     staff_id: "angela-devine"
     staff_list: "`r source('../load_data.R')`"
-title: "`r staff_list[[params$staff_id]][['name']]`"
+title: "Dr Angela Devine"
 image: "../images/staff/angela-devine.jpg"
 format:
   html:

@@ -1,5 +1,5 @@
 ---
-title: "Kathryn Glass"
+title: "Prof. Kathryn Glass"
 image: "../images/staff/kathryn-glass.jpg"
 format:
   html:

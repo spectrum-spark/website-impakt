@@ -1,5 +1,5 @@
 ---
-title: "Jodie McVernon"
+title: "Prof. Jodie McVernon"
 image: "../images/staff/jodie-mcvernon.jpg"
 format:
   html:

@@ -2,7 +2,7 @@
 params:
     staff_id: "michael-meehan"
     staff_list: "`r source('../load_data.R')`"
-title: "Michael Meehan"
+title: "Dr Michael Meehan"
 image: "../images/staff/michael-meehan.jpg"
 format:
   html:

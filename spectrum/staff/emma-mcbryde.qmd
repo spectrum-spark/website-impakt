@@ -1,5 +1,5 @@
 ---
-title: "Emma McBryde"
+title: "Prof. Emma McBryde"
 image: "../images/staff/emma-mcbryde.jpg"
 format:
   html:

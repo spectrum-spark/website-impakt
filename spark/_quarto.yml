@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: ../_site/spark
   pre-render:
+    - cp -a ../news/. ./news/
     - quarto run ../update_data.R
 
 website:
@@ -18,7 +19,7 @@ website:
             href: publications.html
           - text: "Projects"
             href: projects.html
-      - text: "News & Events"
+      - text: "News and Events"
         href: news.html
       - text: "Other Consortia"
         menu:

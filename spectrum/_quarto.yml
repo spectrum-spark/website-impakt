@@ -25,7 +25,7 @@ website:
             href: "publications.html#video"
           - text: "Articles"
             href: "publications.html#articles"
-          - text: "Project"
+          - text: "Projects"
             href: projects.html
       - text: "News and Events"
         href: news.html

@@ -1,5 +1,5 @@
 ---
-title: "Michael Lydeamore"
+title: "Dr Michael Lydeamore"
 image: "../images/staff/michael-lydeamore.png"
 format:
   html:

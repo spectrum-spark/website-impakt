@@ -1,5 +1,5 @@
 ---
-title: "Iadine Chades"
+title: "Dr Iadine Chades"
 image: "../images/staff/iadine-chades.jpg"
 format:
   html:

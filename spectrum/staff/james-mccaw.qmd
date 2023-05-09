@@ -1,5 +1,5 @@
 ---
-title: "James McCaw"
+title: "Prof. James McCaw"
 image: "../images/staff/james-mccaw.jpg"
 format:
   html:

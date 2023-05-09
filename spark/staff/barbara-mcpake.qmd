@@ -1,5 +1,5 @@
 ---
-title: "Barbara McPake"
+title: "Prof. Barbara McPake"
 image: "../images/staff/barbara-mcpake.jpg"
 format:
   html:

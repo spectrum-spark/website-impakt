@@ -1,0 +1,21 @@
+---
+title: "SPECTRUM-SPARK Annual Meeting"
+description: "The first in-person gathering for the consortia since the pandemic."
+author: "Michael Lydeamore"
+date: "02-05-2023"
+---
+
+Held in the backdrop of the RACV Cape Shanck, 100 researchers across the consortia
+gathered together to talk about the latest in infectious diseases research, 
+including pandemic preparedness, disease surveillance, research software and
+disease modelling.
+
+Monday saw the early and mid career academics gather for networking, career
+advice, tips on project management, and some fun storytelling. The evening wrapped
+up at _place_, where food and discussion flowed.
+
+On Tuesday and Wednesday, the remainder of the consortia gathered together, with
+presentations from [seed funded projects](projects.html), 
+
+The organising committee consisted of: Nefel Tellioglu, Laura Bannerman,
+Johanna Monk and TK Le.

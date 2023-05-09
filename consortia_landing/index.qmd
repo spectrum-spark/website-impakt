@@ -1,10 +1,16 @@
 ---
-title: "McVernon Umbrella Corporation"
+title: "IMPAKT: Infectious Diseases **M**odelling for **P**olicy in **A**ustralia and Asia Pacific including **K**nowledge **T**ranslation"
 sidebar: false
 toc: false
 format:
     html:
         page-layout: full
+title-block-banner: images/banner.png
+description: |
+    Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.
+
+    For more information such as governance, people and projects, and specific publications, select from the individual consortia below.
+title-block-banner-color: "#FFFFFF"
 ---
 
 ```{r setup, include=FALSE}
@@ -30,13 +36,12 @@ img {
 
 .consortia-description {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     min-height: 120px;
     border: 1px solid lightgray;
-    height: 120px;
+    min-height: 120px;
     padding-left: 15px;
 }
 
@@ -54,10 +59,6 @@ a, a:visited {
     text-decoration: none;
 }
 </style>
-
-Australian researchers with international collaborators work in consortia to develop modelling in infectious diseases to assist planning in policy and practice. These consortia are represented on this website.
-
-For more information such as governance, people and projects, and specific publications, select from the individual consortia below.
 
 ## Current consortia
 

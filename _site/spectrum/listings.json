@@ -2,7 +2,8 @@
   {
     "listing": "/news.html",
     "items": [
-      "/news/20230502_test_post/test_post.html"
+      "/news/20230502_test_post/test_post.html",
+      "/news/test_post2.html"
     ]
   }
 ]

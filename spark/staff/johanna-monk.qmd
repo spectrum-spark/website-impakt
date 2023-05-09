@@ -1,9 +1,9 @@
 ---
 params:
-    staff_id: "laura-bannerman"
+    staff_id: "johanna-monk"
     staff_list: "`r source('../load_data.R')`"
-title: "`r staff_list[[params$staff_id]][['name']]`"
-image: "../images/staff/laura-bannerman.jpg"
+title: "Johanna Monk"
+image: "../images/staff/johanna-monk.jpg"
 format:
   html:
     page-layout: full
@@ -16,13 +16,10 @@ about:
     links:
       - icon: envelope
         text: "Email"
-        href: "laura.bannerman@unimelb.edu.au"
-      - icon: linkedin
-        text: "LinkedIn"
-        href: "https://www.linkedin.com/in/laura-bannerman-66aab0108/"
+        href: "mailto:monkj@unimelb.edu.au"
       - icon: globe
         text: "More"
-        href: "https://www.doherty.edu.au/people/laura-bannerman"
+        href: "https://www.apprise.org.au/person/johanna-monk/"
 ---
    
 ```{r setup}

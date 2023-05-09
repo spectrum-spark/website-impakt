@@ -2,7 +2,7 @@
 params:
     staff_id: "nick-golding"
     staff_list: "`r source('../load_data.R')`"
-title: "Nick Golding"
+title: "Prof. Nick Golding"
 image: "../images/staff/nick-golding.jpg"
 format:
   html:

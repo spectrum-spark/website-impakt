@@ -105,4 +105,15 @@ DT::datatable(
 
 ## Articles
 
-* [Your unvaccinated friend is roughly 20 times more likely to give you COVID](https://theconversation.com/your-unvaccinated-friend-is-roughly-20-times-more-likely-to-give-you-covid-170448) - The Conversation
+* [Did an accidental ‘blood plague’ in World of Warcraft help scientists model COVID better? The results are in](https://theconversation.com/did-an-accidental-blood-plague-in-world-of-warcraft-help-scientists-model-covid-better-the-results-are-in-188219)  
+The Conversation, August 2022
+* [New COVID variants may be more transmissible but that doesn’t mean the R0 – or basic reproduction number – has increased](https://theconversation.com/new-covid-variants-may-be-more-transmissible-but-that-doesnt-mean-the-r0-or-basic-reproduction-number-has-increased-186826)  
+The Conversation, July 2022
+* [Tired of lockdown rules? Our analysis shows most Australians have curbed mixing and helped suppress COVID](https://theconversation.com/tired-of-lockdown-rules-our-analysis-shows-most-australians-have-curbed-mixing-and-helped-suppress-covid-168946)  
+The Conversation, July 2022
+* [Your unvaccinated friend is roughly 20 times more likely to give you COVID](https://theconversation.com/your-unvaccinated-friend-is-roughly-20-times-more-likely-to-give-you-covid-170448)  
+The Conversation, October 2021
+* [Doherty modelling update provides the goalposts, but local insights will determine play](https://theconversation.com/doherty-modelling-update-provides-the-goalposts-but-local-insights-will-determine-play-168364)  
+The Conversation, September 2021
+* [Sorry Melbourne. The chance of reaching an average 5 COVID-19 cases by mid-October is under 50%](https://theconversation.com/sorry-melbourne-the-chance-of-reaching-an-average-5-covid-19-cases-by-mid-october-is-under-50-147569)  
+The Conversation, October 2020

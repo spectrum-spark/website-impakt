@@ -2,7 +2,7 @@
 params:
     staff_id: "rebecca-chisholm"
     staff_list: "`r source('../load_data.R')`"
-title: "Rebecca Chisholm"
+title: "Dr Rebecca Chisholm"
 image: "../images/staff/rebecca-chisholm.jpg"
 format:
   html:

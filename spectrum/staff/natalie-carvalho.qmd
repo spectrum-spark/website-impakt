@@ -1,5 +1,5 @@
 ---
-title: "Natalie Carvalho"
+title: "Dr Natalie Carvalho"
 image: "../images/staff/natalie-carvalho.png"
 format:
   html:
