@@ -1,0 +1,14 @@
+project:
+  type: website
+  output-dir: _site/
+
+website:
+  title: "Modelling Consortia"
+
+format:
+  html:
+    theme: cosmo
+    css: [theme.css]
+    toc: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.spark\.edu\.au\/custom'
