@@ -62,7 +62,7 @@ a, a:visited {
 
 ## Current consortia
 
-<a href='./spectrum/index.html'>
+<a href='../website-spectrum/'>
 
 ::: {.consortia-description}
 ![](images/logo_spectrum.png){.consortia-item}
@@ -76,7 +76,7 @@ a, a:visited {
 
 </a>
 
-<a href='./spark/index.html'>
+<a href='../website-spark/'>
 
 ::: {.consortia-description}
 ![](images/logo_spark.png){.consortia-item}
