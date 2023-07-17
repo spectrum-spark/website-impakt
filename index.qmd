@@ -104,3 +104,9 @@ a, a:visited {
 ::::
 :::
 </a>
+
+## Video: Explainer: What are infectious disease models?
+
+_This video gives an overview of infectious disease models and how they can be used to inform public health responses._
+
+{{< video https://www.youtube.com/watch?v=IUpsekOsIxQ >}}
